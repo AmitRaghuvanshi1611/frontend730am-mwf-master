@@ -1,0 +1,10 @@
+protocol is systems rules that explain the corredt conduct and proccedure to be 
+followed in the fromal situation
+
+protocol types 
+> http  - hyper text transfer protocol
+> https - hyper text transfer protocol secure 
+> ftp   - file transfer protocol
+> smtp  - simple mail transfer protocol
+> udp - user datagram protocol
+> tcp - transmission control protocol
