@@ -1,0 +1,12 @@
+url mens universal resources locator 
+
+
+two types url 
+1.absolute url
+> absolute url mens any website main page (home page) path its called absolute url
+ex. www.filpkart.com
+
+2.related url
+>related url mens any website secondry page like absolute url is www.filpkart.com so flipkark website any other section like
+about us so its call related url 
+ex www.filpkart.com/about us

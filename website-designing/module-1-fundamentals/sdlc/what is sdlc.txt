@@ -1,0 +1,23 @@
+what is sdlc  ?
+  sdlc stands for software development life cycle
+  sdlc is used to developed any software withing time and budget
+
+  Types of phase of sdlc ....
+
+     1) user requirements gathering
+     2) analysis or srs(software requirements specifications)
+        =>diagram
+        =>DFD(data flow diagram)
+        =>flow chart
+        =>user case diagram
+        =>admin case diagram
+        =>ER diagram
+        =>data dictionary
+
+    3) designing(user panel | admin panel)
+
+    4) implementaion(coding)
+    
+    5) testing
+
+    6) maintanance
