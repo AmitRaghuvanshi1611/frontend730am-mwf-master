@@ -1,0 +1,2 @@
+create github account and upload data on repository
+create a live webpages and done hosting
