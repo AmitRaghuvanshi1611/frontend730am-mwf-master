@@ -1,0 +1,53 @@
+@font-face {
+    font-family: dejavu;
+    src: url(../fonts/DejaVuSans.ttf);
+}
+@font-face {
+    font-family: rainstory;
+    src: url(../fonts/Rainstory\ \(1\).ttf);
+}
+  
+body
+{
+    background-color: #e8edf3;
+    font-family: dejavu
+}
+#content
+{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px;
+    margin-top: 5%;
+    border-top: solid 5px #3d9bdb;
+    display: flex;
+    flex-direction: row;
+}
+.user_img
+{
+  height: auto;
+  width: 30%;
+  border-right: solid 1px lightgray  ;
+  padding: 25px;
+  font-family: rainstory;
+  font-size: 30px;
+}
+.user_info
+{
+height: auto;
+  width: 70%;
+  padding: 25px;
+}
+.user_img img
+{
+    border-radius: 50%;
+}
+#btn
+{
+    height: 40px;
+    width: 50px;
+    border:solid 2px red;
+    font-size: 20px;
+    background-color: #ffffff;
+}

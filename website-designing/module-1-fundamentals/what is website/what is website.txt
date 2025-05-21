@@ -1,7 +1,19 @@
+what is website ?
+
 website is a collection of webpages i.e. called website 
 or 
 website is a collection of information i.e called website 
 
 types of website .. 
+
 a) static website 
+       A static website is a collection of webpages but we can not change or modify anything else after create a website.
+           
 b) dynamic website 
+
+      A dynamic website is a collection of webpages but we can  change or modify anything else after create a website.
+
+       examples : flipkart | tops technology | amazone | myntra
+
+
+   

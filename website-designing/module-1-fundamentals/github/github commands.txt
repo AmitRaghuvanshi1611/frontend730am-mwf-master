@@ -1,3 +1,10 @@
+what is github ?
+ github is a microsoft product
+ github is used to repository systems meanse upload data on server 
+ github shared data public | private
+ 
+How to used github ?
+
 1) create account on github.com
 2) create repository
 3) download git software
