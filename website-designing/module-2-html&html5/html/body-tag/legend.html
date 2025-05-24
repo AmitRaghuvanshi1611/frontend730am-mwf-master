@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bhavani auto Advisor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        #Ragister {
+            width: 50%;
+            height: auto;
+            margin: 5%;
+            margin-left: 20%;
+            padding: 20px;
+            background-color: lightgreen;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            width: 90%;
+            border: 2px solid darkblue;
+            padding: 20px;
+            border-radius: 8px;
+            color: darkblue;
+            
+        }
+        legend 
+        {
+            font-size: 15px;
+            font-weight: bold;
+            color: darkblue;
+        }
+        input[type="email"], input[type="password"], input[type="text"], input[type="date"], textarea, select {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid darkblue;
+            border-radius: 4px;   
+        }
+        button 
+        {
+            width: 90px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid darkblue;
+            border-radius: 4px;
+            background-color: lightblue;
+            color: black;
+        }
+        ::placeholder
+        {
+            color: darkblue;
+            opacity: 0.7; /* Adjusts the opacity of the placeholder text */
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="Ragister" style="">
+        <fieldset>
+            <legend style="font-size: 20px;">Ragister</legend>
+            <label for="email">Email:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="email" name="email " placeholder="Enter Your  email*" required>
+            <br><br>
+            <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+            <br><br>
+            <label for="confirm_password">Confirm Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Your Password" required>
+            <br><br>
+            <label for="phone">Phone:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="phone" name="phone" placeholder="Enter Your Number" required>
+            <br><br>
+            <label>Address:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea id="address" name="address" placeholder="Enter Your Address" rows="2" cols="20" required></textarea>
+            <br><br>
+            <label for="city">City:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="city" name="city" placeholder="Enter Your City" required>
+            <br><br>
+            <label for="state">State:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="state" name="state" placeholder="Enter Your State" required>
+            <br><br>
+            <label for="zip">Zip Code:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="zip" name="zip" placeholder="Enter Your Zip Code" required>
+            <br><br>
+            <label for="country">Country:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="country" name="country" placeholder="Enter Your Country" required>
+            <br><br>
+            <label>Gender  *</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male" >Male</label>&nbsp;
+
+            <input type="radio" id="female" name="female" value="female" required>
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="other" value="other" required>
+            <label for="other">Other</label>
+            <br><br>
+            <label for="dob">Date of Birth:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label>Country</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <select id="country" name="country" required>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <label>Sequrity Quaestion</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="security_question" name="security_question" required>
+                <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+                <option value="What was the name of your first pet?">What was the name of your first pet?</option>
+                <option value="What is your favorite book?">What is your favorite book?</option>
+                <option value="What city were you born in?">What city were you born in?</option>
+                <option value="What is your favorite color?">What is your favorite color?</option>
+            </select>
+            <br><br>
+            <label for="security_answer">Security Answer:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="security_answer" name="security_answer" placeholder="Enter Your Security Answer" required>
+            <br><br>
+            <label for="captcha">Captcha:</label>
+            <div id="captcha">TIMA1116</div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="captcha_input" name="captcha_input" placeholder="Enter Captcha" required>
+            <br><br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>  
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <br><br> 
+            <b style="color: darkblue;">Alredy have an account? &nbsp;&nbsp;<a href="form.html">Login</a></b>
+            
+                
+</fieldset>
+        
+    </div>
+</body>
+</html>

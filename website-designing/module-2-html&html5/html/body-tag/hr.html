@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>bhavani auto advisor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            
+        }
+        #form
+        {
+            width: 50%;
+            height: auto;
+            margin: 5%;
+            margin-left: 20%;
+            padding: 20px;
+            background-color: lightgreen;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        fieldset
+        {
+            width: 90%;
+            border: 2px solid darkblue;
+            padding: 20px;
+            border-radius: 8px;
+            
+        }
+        legend
+        {
+            font-size: 20px;
+            font-weight: bold;
+            color: darkblue;
+        }
+        input[type="email"],[type="password"]
+        {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid darkblue;
+            border-radius: 4px;   
+            
+        }
+        button
+        {
+            width: 90px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid darkblue;
+            border-radius: 4px;
+            background-color: lightblue;
+            color: black;
+            cursor: pointer;
+        }
+        label
+        {
+            font-weight: bold;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1 style="color: darkblue;">Creat Your account here</h1>
+        <hr style="border: 1px solid darkblue;" width="55%" align="left"margin-top="10%">
+        <form>
+            <fieldset>
+                <legend>Login Form</legend>
+                <label><u>Email :</u> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" placeholder="Enter your email*" required>
+                <br><br>
+                <label>Password : </label> 
+                <input type="password" name="password" placeholder="Enter Your  Password*" required>
+                <br><br>
+                <button type="Login" id="btn1" >Login</button>
+                &nbsp;&nbsp;&nbsp;
+                <b><a href="">Forget Password</a></b>
+                <br><br>
+                <b style="color: darkblue;">Don't have an account? &nbsp;&nbsp;<a href="ragister.html">Register</a></b>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
