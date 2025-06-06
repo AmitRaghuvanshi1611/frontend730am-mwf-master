@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ragister</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        #ragister
+        {
+            width: 100%;
+            height: auto;
+            padding: 25px;
+        }
+        input,select
+        {
+            width: 230px;
+            height: auto;
+            padding: 4px;
+            border: 1px solid lightcoral;
+        }
+        input[type="submit"]
+        {
+            width: 200px;
+            height: 30px;
+            background-color: greenyellow;
+            color: black;
+            border: none;
+            padding: 10px;
+            margin-top: 2%;
+            margin-left: 25px;
+            
+        }
+        input[type="reset"]
+        {
+            width: 200px;
+            height: 30px;
+            background-color: red;
+            color: black;
+            border: none;
+            padding: 10px;
+            margin-top: 2%;
+            margin-left: 25px;
+        }
+        td input ::placeholder
+        {
+            color: lightcoral;
+            font-style: italic;
+        }
+        table th
+        {
+            text-align: left;
+            padding: 10px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="ragister">
+        <form>
+            <table width="100%">
+                <tr>
+                    <th>User Name : *</th>
+                    <td><input type="text" placeholder="Enter Your Name" required></td>
+                </tr>
+                <tr>
+                    <th>Email : *</th>
+                    <td><input type="email" placeholder="Enter Your Email" required></td>
+                        </tr>
+                        <tr>
+                    <th>Password : *</th>
+                    <td><input type="password" placeholder="Enter Your Password" required></td>
+                        </tr>
+                <tr>
+                    <th>Confirm Password : *</th>
+                    <td><input type="password" placeholder="Confirm Your Password" required></td>
+                </tr>
+                <tr>
+                    <th>Phone Number : *</th>
+                    <td><input type="tel" placeholder="Enter Your Phone Number" required></td>
+                </tr>
+                <tr>
+                    <th>Address : *</th>
+                    <td><textarea name="address" placeholder="Enter Your Address"  rows="4" cols="30" required>
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td> Male :<input type="radio" name="Gender" value="Male" style="width: auto;"> 
+                        Female:<input type="radio" name="Gender" value="Female" style="width: auto;">
+                        others:<input type="radio" name="Gender" value="Others"style="width: auto;">
+                        </td>
+                </tr> 
+                <tr>
+                    <th>Hobbies *</th>
+                    <td>
+                        <input type="checkbox" id="hobby" value="Reading" style="width: auto;"> Reading
+                        <input type="checkbox" id="hobby" value="Travelling"style="width: auto;"> Travelling
+                        <input type="checkbox" id="hobby" value="Gaming"style="width: auto;"> Gaming
+                        <input type="checkbox" id="hobby" value="Cooking"style="width: auto;"> Cooking
+                    </td>
+                </tr>
+                <tr> 
+                    <th>Select Languge *</th>
+                    <td>
+                        <input type="checkbox" id="Languge" value="Java" style="width: auto;"> Java
+                        <input type="checkbox" id="Languge" value="Python"style="width: auto;"> Python
+                        <input type="checkbox" id="Languge" value="Reactjs"style="width: auto;"> Reactjs
+                        <input type="checkbox" id="Languge" value="PHP"style="width: auto;"> PHP
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mobile No. * </th>
+                    <td><input type="tel" placeholder="Enter Your Mobile No..."</td>
+                </tr>
+                <tr>
+                    <th> Select State * </th>
+                    <td><Select name="state">
+                        <option value="0">--Select State Name-- </option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Bihar">Bihar</option>
+
+                    </Select></td>
+                <tr>
+                    <th>Select Multiple Location* </th>
+                    <td><Select name="city" size="9" multiple>
+                        <option value="0">--Select City Name-- </option>
+                        <option value="Surat">Surat</option>
+                        <option value="Vadodara">Vadodara</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Gandhinagar">Gandhinagar</option>
+                        <option value="Anand">Anand</option>
+                        <option value="Bhavnagar">Bhavnagar</option>
+                        <option value="Jamnagar">Jamnagar</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Mumbai">Mumbai</option>
+
+                    </Select></td>
+                </tr>
+                <tr>
+                    <th>Upload Your Image *</th>
+                    <td><input type="file" name="image" placeholder="Upload Your Image..." required multiple></td>
+                </tr>
+
+                <tr>
+                    
+                    <td colspan="2"> <input type="Submit" name="Ragister" value="Ragister">
+                                     <input type="Reset" name="Reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!-- Question 2: What is the difference between colspan and rowspan in tables? Provide examples. -->
+
+
+<!-- colspan mens table formate data cell arragnge in horizonttly  -->
+ <!-- it specifies the number of colums that the cell span across and show them as a single cell  -->
+  <!-- <td colspan="3"> 3 is the number how much cell creare in table -->
+
+<!-- rowspan mens table formate data cell arragnge in vertically  -->
+<!-- it specifies the number of rows that the cell span across and show them as a single cell  -->
+ <!-- <td rowspan="3"> 3 is the number how much cell creare in table -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>colspan and rowspan</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- example of rowspan -->
+    <table align="center" width="50%" border="1:" id="form">
+        <tr>
+            <th rowspan="6"> List Of Car</th>
+        <       <td>Spreesso</td>
+        </tr>
+        <tr>
+            <td>Baleno</td>
+        </tr>
+        <tr>
+            <td>Alto</td>
+        </tr>
+        <tr>
+            <td>Brezza</td>
+        </tr>
+        <tr>
+            <td>Ertiga</td>
+        </tr>
+        <tr>
+            <td>Swift</td>
+        </tr>
+
+        <!-- exampple of colspan -->
+       
+    </table>
+
+    <table align="center" width="50%" border="1:" id="form">
+        <thead>
+        <tr>
+            <th colspan="2"> List Of Car</th>
+        </tr>
+        <       <th>Car Name </th>
+                <th>Price</th>
+
+        </tr>
+        <tr>
+            <td>Baleno</td>
+            <td>₹ 7,00,000</td>
+        </tr>
+        <tr>
+            <td>Alto</td>
+            <td>₹ 3,00,000</td>
+        </tr>
+        <tr>
+            <td>Brezza</td> 
+            <td>₹ 8,00,000</td>
+        </tr>
+        <tr>
+            <td>Ertiga</td>
+            <td>₹ 10,00,000</td>
+        </tr>
+        <tr>
+            <td>Swift</td>
+            <td>₹ 6,00,000</td>
+        </tr>
+       </thead>
+    </table>
+    </body>
+    </html>
