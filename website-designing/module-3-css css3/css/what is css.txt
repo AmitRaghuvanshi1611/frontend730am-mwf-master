@@ -1,0 +1,50 @@
+what is css ??
+ css stands for cascading stylesheet 
+ css use in website in style provides
+ always css file save in .css
+ css provides stylesheet in webpage and website of html
+
+
+ what is css selector ???
+  css selector is used to  access html elements and provides
+  diffrent-2 stylesheet on webpage
+
+
+  syntax :
+
+  <style>
+  selector
+  {
+    property:value;
+  }
+  </style> 
+
+
+  type of css selector
+
+  1) simple selector
+     a) universal selector
+     b)elements selector
+     c)id selector
+     d)class selector
+
+  2)grouping selector
+
+  3)combinator selector
+        a)descendent combinator (space)
+        b)child combinator (>)
+        c)next sibiling combinator (+)
+        d)subsequent sibiling combinator(~)
+
+  4)pseudo elements selector
+   
+  5)pseudo class selector
+
+  6)attributes selector 
+
+
+  type of css ??
+
+  a)inline css
+  b)internal css
+  c)external css
