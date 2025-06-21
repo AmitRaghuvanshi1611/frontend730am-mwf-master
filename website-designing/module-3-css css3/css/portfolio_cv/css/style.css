@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #323b4c;
+    --bg-lightgray: #e4e4e4;
+    --bg-black: #000000;
+    --bg-white: white;
+    --text-color: white;
+    --text-lightgray: #e4e4e4;
+    --text-black: #000000;
+    --text-blue:#323b4c;
+}
+body{
+    background-color: black;
+    width: 100%;
+}
+#name 
+    {
+        text-align: center;
+        background-color:var(--primary-color);
+        height: 150px;
+        margin: auto;
+        width: 70%;
+        margin-top: -30px;
+        
+    }
+    #name h1 
+    {
+        color: var(--bg-white);
+        margin-left: 20%;
+        font-size: 40px;
+        padding: 20px;
+        font-family: cursive;
+    }
+    #name p 
+    {
+        color: white;
+        margin-left: 21%;
+        font-size: 20px;
+        padding: 10px;
+        margin-top: -30px;
+    }
+    #name img 
+    {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: -90px;
+        margin-left: -70%;
+        border: 5px solid white;
+        z-index: -4;
+    }
+    #content 
+    {
+        width: 70%;
+        margin: auto;
+        margin-left: 15%;
+        height: 450px;
+        
+    }
+    .left-Panel
+    {
+        width: 30%;
+        height: 1350px;
+         margin: 0px;
+        padding: 0px;
+        float: left;
+        color: var(--text-black);
+        margin-top: 0%;
+        background-color: var(--bg-lightgray);
+        color: var(--text-blue);
+         }
+    .left-Panel h1
+    {
+        
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+   .personal-info 
+    {
+  
+        font-size: 18px;
+        color: var(--text-blue);
+        padding: auto;
+        margin-top: 50%;
+        padding: 10px;
+        
+    }
+    #content hr
+    {
+        border: solid 1px var(--text-blue);
+        margin-top: 10px;
+        width: 90%;
+    }
+    .skills,.language,.strength,.extra-activities
+    {
+       font-size: 18px;
+        color: var(--text-blue);
+        padding: auto;
+        margin-top: 5%;
+        padding: 10px;
+         
+        
+    }
+    .content-right
+    {
+        width: 70%;
+         height: 1350px;
+         margin: 0px;
+        padding: 0px;
+        float: right;
+        background-color: var(--bg-white);
+        color: var(--text-blue);
+    }
+    .profile
+    {
+        width: 95%;
+        height: 150px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 5px;
+    }
+    .profile h1
+    {
+        font-size: 20px;
+        color: var(--text-blue);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 10px;
+        margin-bottom: 0px;
+
+    }
+    .content-right hr
+    {
+        border: solid 1px var(--text-blue);
+        width: 100%;
+        margin: 0;
+        margin-top: 0;
+        margin-left: 5px;
+        
+    }
+    .profile p
+    {
+        font-size: 16px;
+        color: var(--text-blue);
+        margin-left: 10px;
+        margin-top: 5px;
+        width: 100%;
+        margin-right: 10px;
+        
+    }
+    .Education
+    {
+        width: 95%;
+        height: 150px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 5px;;
+    }
+    .Education h1
+    {
+        font-size: 20px;
+        color: var(--text-blue);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        margin-top: -25px;
+
+    }
+    .experience
+    {
+        width: 95%;
+        height: 150px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 5px;
+    }
+    .experience h1
+    {
+        font-size: 20px;
+        color: var(--text-blue);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+    }

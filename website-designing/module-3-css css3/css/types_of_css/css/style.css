@@ -1,0 +1,51 @@
+body
+{
+    background-color: blueviolet;
+    padding: 0;
+    margin: 0;
+}
+#head
+{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 1px;
+    display: flex;
+    
+    align-items: center;
+    
+}
+h1
+{
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    height: auto;
+}
+.serchbar
+{
+    margin-right: 20px;
+    margin-left: 15%;
+    
+    
+}
+.serchbar input
+        {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            width: 400px;
+            display: inline;
+            
+        }
+.social-media 
+{
+    margin-left: 15%;
+}
+.social-media a
+{
+    margin-left: 0%;
+    color: white;
+}

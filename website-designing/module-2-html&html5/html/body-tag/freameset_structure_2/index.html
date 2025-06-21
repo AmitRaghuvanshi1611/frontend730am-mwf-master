@@ -13,7 +13,45 @@
             margin: 0;
             padding: 0;
         }
-
+        #heder 
+        {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            color: black;
+            padding: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+        #heder img
+        {
+            width: 50px;
+            height: 50px;
+            margin-right: 30px;
+            padding: 0;
+        }
+        #heder ul li
+        {
+         display: inline-block;
+         font-size: 20px;
+         margin-top: -40%;
+         margin-left: -38%;
+         padding: 80px ;
+        }
+        #heder input[type="search-box"]
+        {
+            width: 180px;
+            height: 30px;
+            margin-right: 50%;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            place-items: center;
+            
+            
+           
+        }
         #container 
         {
             width: 100%;
@@ -31,20 +69,42 @@
             margin-top: 0;
             top: 0;
         }
+        #container ul li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
         
         </style>
 </head>
 <body>
-    <div id="container" style="color: white">
+    <section id="heder">
+        <img src="images/logo.JPG" alt="W3School Logo" style="width: 50px; height: 50px;">
+        
         <ul>
-            <li><a href="#"></a>HTML</li>
-            <li><a href="#"></a>CSS </li>
-            <li><a href="#"></a>JAVA SCRIPT </li>
-            <li><a href="#"></a>SQL </li>
+            <li>Tutorials</li>
+            <li>Excerses</li>
+            <li>Certificate</li>
+            <li>Services</li>
+            
+        </ul> 
+        <input type="search-box" placeholder="Serch...">
+        
+    </section>
+    <!-- Navbar start Here -->
+    <section id="container" style="color: white">   
+        <ul>
+            <li><a href="HTML_introdution.html" target="w3c"">HTML</a></li>
+            <li><a href="css.html" target="w3c">CSS</a></li>
+            <li><a href="javscript.html" target="w3c">JAVA SCRIPT</a> </li>
+            <li><a href="sql.html" target="w3c">SQL</a></li>
             <li><a href="#"></a>PYTHON </li>
             <li><a href="#"></a>JAVA</li> 
         </ul>
-    </div>
+    </section>
+    <!-- Iframe Start here  -->
     <iframe src="link.html" width="20%" frameborder="0" height="600px" ></iframe>
     <iframe src="HTML_introdution.html" width="78%" height="600px" frameborder="0" name="w3c" ></iframe>
 </body>
