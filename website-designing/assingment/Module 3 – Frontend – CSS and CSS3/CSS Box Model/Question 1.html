@@ -1,0 +1,91 @@
+
+<!-- Explain the CSS box model and its components (content, padding, border, margin). How does each affect the size of an element? -->
+
+<!-- Ans  -->
+
+<!-- css box model mens one type of webpage content mens devloper can any content design in webpage so css box model 
+ by apply style on content  -->
+
+ <!-- 1. devloper can create one content  -->
+  <!--2. this content on apply boder  -->
+<!--  3. devloper can apply space between border and content its called padding -->
+ <!-- 4. border or webpage area or border and other elamens between space is margin so its sturcure called is css box model -->
+
+ <!-- structure of css box model   -->
+ 
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        #boxmodel
+        {
+            width: 100%;
+            height:500px;
+            background-color: aqua;
+            text-align: center;
+            margin-top: 50%;
+            margin: auto;
+            
+        }
+        .border
+        {
+            width: 30%;
+            height: 250px;
+            background-color: blue;
+            margin: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .padding
+        {
+            
+            width: 90%;
+            height: 220px;
+            background-color: green;
+            margin: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        
+        }
+        .content
+        {
+            
+            width: 80%;
+            height: 170px;
+            background-color: yellow;
+            margin: auto;
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        
+        }
+    </style>
+
+</head>
+<body>
+    <section id="boxmodel">
+                * Margin *
+        <div class="border">
+               * border *
+            <div class="padding">
+                  * padding *
+                <div class="content">
+                   * content * 
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

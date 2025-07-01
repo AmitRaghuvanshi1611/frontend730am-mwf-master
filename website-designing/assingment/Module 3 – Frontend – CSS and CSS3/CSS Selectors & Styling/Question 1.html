@@ -1,0 +1,97 @@
+<!-- What is a CSS selector? Provide examples of element, class, and ID selectors. -->
+
+
+<!-- css Selctors mens webpage or website in providing the style to the HTML elements. -->
+<!-- css selectors through acess the HTML elements and apply styles to them. -->
+
+<!-- 1) simple selector
+     a) universal selector
+     b)elements selector
+     c)id selector
+     d)class selector
+
+  2)grouping selector
+
+  3)combinator selector
+        a)descendent combinator (space)
+        b)child combinator (>)
+        c)next sibiling combinator (+)
+        d)subsequent sibiling combinator(~)
+
+  4)pseudo elements selector
+   
+  5)pseudo class selector
+
+  6)attributes selector 
+
+ -->
+
+ <!--  Exmaple of class selector -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>class, and ID selectors</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* this is id selector example  */
+        #CSS_selector 
+        {
+            color: white;
+            margin: 20px;
+        }
+        /* this is class selector example */
+
+        .types_of_selectors {
+            color: lightblue;
+            margin: 20px;
+        }
+        /* this is element selector example */
+        h1 {
+            color: yellow;
+            text-align: center;
+        }
+        ol {
+            color: lightgreen;
+            margin-left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div id="CSS_selector">
+        <h1>What is a CSS selector? Provide examples of element, class, and ID selectors</h1>
+        <div class="types_of_selectors">
+            <h1>1.Simple selector</h1>
+            <ol type="A">
+                <li>universal selector</li>
+                <li>elements selector</li>
+                <li>elements selector</li>
+                <li>class selector</li>
+            </ol>
+            <h1>2.Grouping selector</h1>
+            <h1>3.Combinator selector</h1>
+            <ol type="A">
+                <li>descendent combinator (space)</li>
+                <li>child combinator (&gt;)</li>
+                <li>next sibling combinator (+)</li>
+                <li>subsequent sibling combinator (~)</li>
+            </ol>
+            <h1>4.Pseudo elements selector</h1>
+            <h1>5.Pseudo class selector</h1>
+            <h1>6.Attributes selector</h1>
+            <ol type="A">
+                <li>class selector</li>
+                <li>id selector</li>
+        </div>
+        
+    </div>
+</body>
+</html>

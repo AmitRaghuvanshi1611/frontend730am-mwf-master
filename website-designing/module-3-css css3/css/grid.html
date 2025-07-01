@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Grid</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            background-color: coral;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        #content
+        {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: green;
+            border-radius: 8px;
+            height: auto;
+            display:grid;
+            grid-template-columns: 40% 40%;
+        }
+        .State
+        {
+            background-color: blue;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            margin: 0;
+            margin-left: 5px;
+            color: white;
+            height: auto;
+        }
+        .Captital_city
+        {
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            height: auto;
+            margin: 0;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="State">
+            <h1>State Name</h1>
+            <ul>
+                <li>Gujrat</li>
+                <li>maharashtra</li>
+                <li>Punjab</li>
+                <li>utterpradesh</li>
+            </ul>
+        </div>
+        <div class="Captital_city">
+            <h1>captital city</h1>
+            <ul>
+              <li>Gandhinagar</li>
+                <li>Mumbai</li>
+                <li>Chandigarh</li>
+                <li>Lucknow</li>
+            </ul>
+        </div>
+</body>
+</html>

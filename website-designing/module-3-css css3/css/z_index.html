@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>z index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: auto;
+            overflow-x: hidden;
+            background-color: black;
+        }
+        #index 
+        {
+            width: 50%;
+            height: 550px;
+            margin: 0 auto;
+            position: relative;
+            background-color: white;
+            margin-top: 5%;
+        }
+        .box1
+        {
+            width: 25%;
+            height: 25%;
+            position: absolute;
+            top: 2%;
+            background-color: orange;
+            margin-top: 5%;
+            margin-left: 7%;
+            z-index: 4;
+            
+        }
+        .box2
+        {
+            width: 25%;
+            height: 25%;
+            position: absolute;
+            top: 2%;
+            background-color: red;
+            margin-top: 8%;
+            margin-left: 2%;
+            z-index: 3;
+            
+        }
+        .box3
+        {
+            width: 25%;
+            height: 25%;
+            position: absolute;
+            background-color: blue;
+            margin-top: 17%;
+            margin-left: 14%;
+            z-index: 1;
+           
+        }
+        .box4
+        {
+            width: 25%;
+            height: 25%;
+            position: absolute;
+            background-color: green;
+            margin-top: 15%;
+            margin-left: 18%;
+            z-index: 1;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <section id="index">
+        <div class="box1">orange</div>
+        <div class="box2">Red</div>
+        <div class="box3">blue</div>
+        <div class="box4">green</div>
+    </section>
+</body>
+</html>

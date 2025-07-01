@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>border-radius</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        #border-radius-example
+        {
+            width: 400px;
+            height: 150px;
+            background-color: white;
+            border: 1px solid #a5a5a7;
+            margin: auto;
+            border-radius: 45px 0px 45px 0px;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+        }
+        .logo img
+        {
+            width: 130px;
+            height: 150px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: solid 1px #a5a5a7;
+            border-radius: 45px 0px 0px 0px;
+            
+        }
+        .text
+        {
+            width: 270px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #281d6b;
+            color: white;
+            border-radius: 0px 0px 45px 0px;
+        }
+        .text h1
+        {
+            font-size: 82px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            width: 80%;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 0;
+            text-transform: justify;
+        }
+        .text p
+        {
+            font-size: 82px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            height: 0;
+            margin-top: -10%;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="border-radius-example">
+        <div class="logo">
+            <img src="images/only_log.jpg" alt="logo">
+            
+        </div>
+
+        <div class="text">
+            <h1>STAR</h1>
+            <p>PLUS</p>
+        </div>
+
+    </div>
+</body>
+</html>

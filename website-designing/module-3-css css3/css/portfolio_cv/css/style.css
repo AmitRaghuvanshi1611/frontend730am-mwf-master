@@ -19,7 +19,8 @@ body{
         height: 150px;
         margin: auto;
         width: 70%;
-        margin-top: -30px;
+        margin-top: -30px%;
+        border: inset 5px var(--bg-white);
         
     }
     #name h1 
@@ -54,6 +55,7 @@ body{
         margin: auto;
         margin-left: 15%;
         height: 450px;
+        
         
     }
     .left-Panel
@@ -151,8 +153,9 @@ body{
         width: 95%;
         height: 150px;
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 25px;
         padding: 5px;;
+        border-left: solid 1px var(--text-blue);
     }
     .Education h1
     {

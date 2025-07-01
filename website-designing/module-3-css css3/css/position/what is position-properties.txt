@@ -1,0 +1,27 @@
+Position properties in CSS control how an element is placed on a web page. The main property is position, which can have these values:
+
+static: Default, follows normal flow.
+
+relative: Moves relative to its normal position.
+
+absolute: Positioned relative to the nearest ancestor with a position other than static.
+
+fixed: Positioned relative to the browser window.
+
+sticky: Acts like relative until a scroll threshold, then acts like fixed.
+
+Note : - 
+
+When We Used positions properties we can use to move our section via top ,right,bottom,left
+
+Position Value	Description
+
+static	        Default, follows normal flow
+
+relative	    Moves relative to its normal position
+
+absolute	    Positioned relative to nearest positioned ancestor
+
+fixed	        Positioned relative to the browser window
+
+sticky	        Acts like relative, then fixed after scroll threshold

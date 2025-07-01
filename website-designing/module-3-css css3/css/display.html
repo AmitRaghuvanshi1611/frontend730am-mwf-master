@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Display</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body{
+            background-color: lightskyblue;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        #content {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            height: auto;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            flex-wrap: nowrap;
+        }
+        .country {
+            background-color: lightcoral;
+            padding: 20px;
+            border-radius: 8px;
+            width: 43%;
+            margin: 0;
+            margin-left: 5px;
+            margin: 2%;
+            
+        }
+        .currencies {
+            background-color: lightgreen;
+            padding: 20px;
+            border-radius: 8px;
+            width: 43%;
+            height: auto;
+            margin: 0;
+            margin: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div class="country">
+            <h1>Country Name</h1>
+            <ul>
+                <li>India</li>
+                <li>Australia</li>
+                <li>Albania</li>
+                <li>Bangladesh</li>
+            </ul>
+        </div>
+        <div class="currencies">
+            <h1>Currency</h1>
+            <ul>
+                <li>Rupees</li>
+                <li>Australian Dollar</li>
+                <li>Lek</li>
+                <li>Taka</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

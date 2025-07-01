@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Navigation Dropdown</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        #content
+        {
+            width: 100%;
+            margin: 0 ;
+            padding: 1px;
+            height: auto;
+            background-color: black;
+            margin-top: 1%;
+        }
+        #content nav ul
+         {
+            width: 100%;
+            height: auto;   
+            
+        }
+        #content nav ul li
+        {
+            display: inline-block;
+            margin-right: 20px;
+            
+          
+        }
+        #content nav a
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 20%;
+            color: white;
+        }
+        .active
+        {
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 20%;
+        }
+        .dropdown
+        {
+            position: relative;
+            
+        }
+        .dropdown-menu
+        {
+            display: none;
+            position: absolute;
+            border-radius: 10%;
+            
+        }
+        .dropdown-menu li
+        {
+            margin: 4px !important;
+            padding: 5px !important;
+        }
+        .dropdown-menu1
+        {
+            display: none;
+            position: absolute;
+            border-radius: 10%;
+            left: 100%;
+            top: 0;
+        }
+        .dropdown-menu li:hover .dropdown-menu1
+        {
+            display: block;
+            padding: 5px 5px !important;
+            background-color: greenyellow;
+            color: black;
+        }
+        .dropdown-menu li a
+        {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            display: block;
+        }
+       
+        .dropdown:hover .dropdown-menu
+        {
+            display: block;
+            padding: 0px 0px !important;
+            background-color: red;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="content">
+        <nav>
+            <ul >
+                <li><a href="Home" class="active">Home</a></li>
+                <li><a href="Aboutus">Aboust us</a></li>
+                <li><a href="Services">Services</a></li>
+                <li class="dropdown">
+                    <a href="Account_login">Account Login</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Login.html">Login</a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="Login.html#admin">Admin Login</a></li>
+                            <li><a href="Login.html#user">User Login</a></li>
+                        </ul></li>
+                        <li><a href="Register.html">Register</a></li>
+                        <li><a href="forgetpassword.html">Forget Password</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+</body>
+</html>

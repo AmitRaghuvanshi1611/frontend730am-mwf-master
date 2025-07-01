@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sticky</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        #header
+        {
+            width: 100%;
+            height: auto;
+            background-color: black;
+            border-bottom: solid 1px white;
+            display: flex;
+            flex-wrap: wrap;
+            top: 0;
+            position: sticky;
+            z-index: 5;
+        }
+        .call
+        {
+            width: 20%;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            margin-left: 2%;
+        }
+        .Search
+        {
+            width: 20%;
+            height: auto;
+            font-size: 20px; 
+            padding: 0;
+                      
+        }
+        .Search input
+        {
+            width: 70%;
+            height: auto;
+            padding: 0px;
+        }
+        .social_media
+        {
+            color: white;
+            width: 20%;
+            margin-left: 25%;
+            font-size: 25px;
+            padding: 20px;
+            height: autos;
+            
+        }
+        #navbar
+        {
+            width: 100%;
+            height: auto;
+            background-color: gray;
+            margin-top: -16px;
+           
+        }
+        #navbar ul li
+        {
+            
+            height: auto;
+            display:inline-block;
+            padding: 10px;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        #navbar ul li a
+        {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .dropdown
+        {
+            position: relative;
+        }
+        .dropdown-menu
+        {
+            position: absolute;
+            display: none;
+            border-radius: 10%;
+            z-index: 5;
+            
+        }
+        .dropdown-menu li
+        {
+            margin: 4px;
+            padding: 4px;
+        }
+        .dropdown-menu li a
+        {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            display: block;
+            
+        }
+       .dropdown:hover .dropdown-menu
+       
+        {
+            display: block;
+            padding: 5px 5px !important;
+            background-color: black;
+            
+        }
+        #slider
+        {
+            width: 90%;
+            height: 450px;
+            background: url(imges/2262-happy-janmashtami.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-left: 5%;
+            position: relative;
+        }
+        .slider_txt
+        {
+            width: 50%;
+            height: auto;
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            background-color: rgba(255,255,255,0.5);
+        }
+        .slider_txt h1
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+        .slider_txt p
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        #content
+        {
+            width: 90%;
+            height: auto;
+            margin-top: 3%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left
+        {
+            width: 30%;
+            height: 650px;
+            background-color: black;
+            margin-left: 5%;
+
+        }
+        .right
+        {
+            width: 60%;
+            height: 650px;
+            background-color: blue;
+            margin-left: 5%;  
+        }
+        #footer
+        {
+            width: 100%;
+            height: 50px;
+            position: relative;
+            background-color: grey;
+            position: fixed;
+            bottom: 0;
+        }
+        #footer p
+        {
+            font-size: 20px;
+            position: absolute;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 30%;
+            color: white;
+        }
+        .whatsapp_icon
+        {
+            width: auto;
+            height: auto;
+            padding: 10px;
+            float: right;
+            margin-top: -70px;
+            
+        }
+        .whatsapp_icon img
+        {
+            height: 100px;
+            width: 100px;
+            animation: heartBeat infinite 0.9s;
+        }
+       
+         
+        </style>
+</head>
+<body>
+    <!-- header in use sticky position -->
+
+    <section id="header">
+        <div class="call">
+            <b>Call Us  (+91) 9106396956</b>
+        </div>
+        <div class="Search"></div>
+
+            <input type="search" placeholder="serch here">
+        
+            <div class="social_media">
+                <span class="fa fa-instagram"></span>&nbsp;&nbsp;
+                <span class="fa fa-whatsapp"></span>&nbsp;&nbsp;
+                <span class="fa fa-twitter"></span>&nbsp;&nbsp;
+            </div>
+    </section>
+
+    <!-- navbar -->
+      <section id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about Us"> About us </a></li>
+                <li><a href="#Service">Service</a></li>
+                    
+                <li  class="dropdown"><a href="#account">Account</a>
+                 <ul class="dropdown-menu">
+                    <li><a href="login">Login</a></li>
+                    <li><a href="login">Create Account</a></li>
+                 </ul>
+                </li>
+                <li><a href="#Feedback">Feedback</a></li>
+            </ul>
+    </section>
+    <!-- Slider -->
+      <section id="slider">
+            <div class="slider_txt">
+                <h1>Bumper Sale on Janmashtmi 2025</h1>
+                <p>Festival are integral part of any culture. Celebrated throughout the year, the galaxy of Indian Festival makes the Indian Heritage the richest. Vibrant colors, brightly lit places, traditional cuisines & sweets, dance & music, dresses & ornaments, fasting & feasting, exchanging gifts & good will, prayers & processions, rituals & holidays.</p>
+                <p align="center"><button type="button">Order Now </button></p>
+            </div>
+    </section>
+    <!-- Content  -->
+  <section id="content">
+        <div class="left"></div>
+        <div class="right"></div>
+
+    </section>
+    <!-- footer -->
+
+      <section id="footer">
+            
+            <p >&copy; 2025 all Rights Reserved &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Place Your Order Now </b></p>
+            
+            
+            <div class="whatsapp_icon">
+                
+                <a href="https://api.whatsapp.com/send?phone=9106396956&text=Hey%20Our%20team%20Connect%20You%20Shortly%20Thanks%20For%20Your%20Repossess%20Have%20Nice%20Day...."><img src="imges/WhatsApp.svg.webp" alt="WhatsApp" ></a>
+            </div>
+    </section>
+</body>
+</html>
