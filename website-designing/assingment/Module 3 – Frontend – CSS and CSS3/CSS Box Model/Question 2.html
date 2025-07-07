@@ -1,0 +1,78 @@
+<!-- What is the difference between border-box and content-box box-sizing in CSS? Which is the default? -->
+
+<!-- content box is defualt property of html5 in also if devloper can any content create after apply border on content so content height & width both increse any its not porper show in webpage and menual set in fix space in so it is very time consuming prosess  -->
+
+<!-- border box use when one webpage in many content create and all content space is fixed but some highlight content on apply border so  this time devloper can apply border box its is very easy to use no any size increse or webpage on proper show  -->
+
+
+<!-- content box is default -->
+
+
+<!-- example of content box -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Content Box</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0%;
+            padding: 0;
+        }
+        #example
+        {
+            margin-top: 5%;
+        }
+        .content-box
+        {
+            height: 300px;
+            width: 50%;
+            margin-top: 10%;
+            margin: auto;
+            background-color:yellow;
+            /* this is content box by default in this content in apply border so its effect on content width & height  */
+            border: solid 10px red; 
+        }
+        .border-box
+        {
+            height: 300px;
+            width: 50%;
+            margin-top: 10%;
+            margin: auto;
+            background-color: yellow;
+            /* if apply boder box so its can not effrect on content width & height so webpage style is proper show   */
+            box-sizing: border-box;
+            border: solid 10px green;
+            margin-top: 5%;
+        }
+        .content-box h1
+        {
+            font-size: 35px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .border-box h1
+        {
+            font-size: 35px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="example">
+        <div class="content-box">
+        <h1>Content Box</h1>
+            </div>
+        <div class="border-box">
+          <h1>Border Box</h1>  
+        </div>
+    </div>
+</body>
+</html>

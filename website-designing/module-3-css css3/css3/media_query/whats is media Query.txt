@@ -1,0 +1,23 @@
+What is Media Query  ?
+
+Media Query is Part Of css3
+Media Query is used for making webpage responsive in all devices 
+Media Query is used for making webpage responsive with out bootstrap.
+Media Query is set responsive content for any webpage break point 
+
+
+> Types of Media Query
+
+--> all        suitable for all  media devices
+--> print      used for printers
+--> Screen     Targeted at computer Screen,tablets,smartphones etc
+--> Speech     Designed for Screen readers that read the content aloud
+
+* using Screen we consider breakpoint of devicesis 
+
+
+A) Small devices (Mobile ) (min-width :320px) & (max-width 480px)
+B) Tablet  (min-width :481px) & (max-width 767px)
+C) laptop  (min-width :768px) & (max-width 1024px)
+D) large   (min-width :1025px) & (max-width 1440px)
+ 

@@ -1,0 +1,181 @@
+body
+        {
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        #content
+        {
+            width: 50%;
+            height: auto;
+            margin: auto !important;
+            margin-top: 5% !important;
+            padding: 25px;
+            margin: 2px; 
+            display: flex;
+            flex-direction: row;
+        }
+        .img1
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: orangered;
+            margin: 20px;
+
+        }
+        .img2
+        {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            margin: 20px;
+        }
+        .img3
+        {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            margin: 20px;
+        }
+        .img1:hover
+        {
+            
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            transition: 2s ease all;
+            transform: rotate(180deg);
+            border-radius: 50%;
+
+        }
+        .img2:hover
+        {
+            
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+            transition: 3s ease all;
+            transform: rotate(720deg);
+            border-radius: 50%;
+
+        }
+        .img3:hover
+        {
+            
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            border: solid 5px black;
+            transition: 4s ease all;
+            transform: rotate(-720deg);
+            border-radius: 50%;
+
+        }
+        .img4
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            transform: rotate(45deg);
+            margin: 20px;
+
+        }
+        .img5
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: black;
+             transform: rotate(18deg);
+            margin: 20px;
+
+        }
+        .img6
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: black;
+             transform: rotate(-18deg);
+            margin: 20px;
+
+        }
+         .img7
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            transform:scale(0.2,0.3);
+            margin: 20px;
+
+        }
+         .img8
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            transform:scale(0.2,0.5);
+            margin: 20px;
+
+        }
+         .img9
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            transform:scale(0.2,1);
+            margin: 20px;
+
+        }
+         .img10
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            transform: skew(40deg);
+            margin: 20px;
+
+        }
+         .img11
+        {
+            margin-left: 4%;
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            transform: skew(40deg,20deg);
+            margin: 20px;
+
+        }
+        button
+        {
+            width: 200px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            font-size: 25px;
+            margin-left: 20%;
+            transition: 0.2s ease all;
+            transform: skew(3deg,3deg);
+        }
+         button:hover
+        {
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            margin-left: 20%;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+             transition: 0.2s ease all;
+            transform: skew(0deg,0deg);
+            
+        }
+        
+      
