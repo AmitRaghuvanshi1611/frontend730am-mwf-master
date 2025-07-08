@@ -1,0 +1,67 @@
+<!-- Describe the properties justify-content, align-items, and flex- direction used in Flexbox. -->
+
+<!-- With exmple discribe flex-box main properties  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>flex container</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        *
+        {
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 95%;
+            height: 250px;
+            margin: 25px;
+            gap: 10px;
+            border: solid 2px black;
+            display: flex; 
+            /* use flex-direction properties so all elements arrange in row  */ 
+            /* 1.flex-direction: row; */
+            /* flex-direction use items to arrange in row or colum in main access */
+            /* but this property use in responsive webgae  elemnts sink and not see perfectly elements  */
+            /* flex-wrap: wrap; */
+            /* flex wrap in see perfectly elements */
+            /* flex flow */
+            /* flex flow by use flex wrap or flex row  */
+            flex-flow: wrap row;
+            /* justify-content by align the item (box) on container in horizontal or if align class in main access so this time use   justify-content  */
+            justify-content: center;
+            /* 2. align-items */
+            /* 3. justify-content by align the item (box) on container in vertical or if align class in container cross access this time use align-items */
+            align-items: center;
+            align-content: space-evenly;
+        }
+        .box
+        {
+            width: 80px;
+            height: 50px;
+            border: solid 2px blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+    </div>
+    
+    
+</body>
+</html>
