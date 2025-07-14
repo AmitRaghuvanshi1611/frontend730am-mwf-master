@@ -1,0 +1,11 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+.bg-primary
+{
+    background-color: #66e83a !important; 
+}

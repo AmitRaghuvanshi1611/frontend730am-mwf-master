@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>filter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .filter,.filter1,.filter2,.filter3
+        {
+            width: 30%;
+            height: auto;
+            margin: auto;
+        }
+        .filter img
+        {
+            height: auto;
+            margin-top: 5%;
+            width: 100%;
+            filter: grayscale(100%) brightness(0.8) contrast(1.2);
+            transition: filer 4s ease ease-in-out;
+            transition: 0.9s ease-in-out;
+        }
+        
+        .filter img:hover
+        {
+            height: auto;
+            margin-top: 5%;
+            width: 100%;
+            filter: grayscale(0%);
+            transition: filer 0.3s ease ease-in-out;
+            border-radius: 30%;
+        }
+        .filter1 img
+        {
+            height: 380px;
+            margin-top: 5%;
+            width: 100%;
+            filter: blur(10px);
+            transition: filer 4s ease ease-in-out;
+            transition: 0.9s ease-in-out;
+        }
+         .filter1 img:hover
+        {
+            height: 380px;
+            margin-top: 5%;
+            width: 100%;
+            filter: blur(0px);
+            transition: filer 0.3s ease ease-in-out;
+            border-radius: 50%;
+        }
+        .filter2 img
+        {
+            height: 380px;
+            margin-top: 5%;
+            width: 100%;
+            filter: brightness(0.1);
+            transition: filer 4s ease ease-in-out;
+            transition: 0.9s ease-in-out;
+        }
+         .filter2 img:hover
+        {
+            height: 380px;
+            margin-top: 5%;
+            width: 100%;
+            filter: brightness(1);
+            transition: filer 0.3s ease ease-in-out;
+            border-radius: 50%;
+        }
+        .filter3 img
+        {
+            height: 380px;
+            margin-top: 5%;
+            width: 100%;
+            filter: contrast(0.2);
+            transition: filer 4s ease ease-in-out;
+            transition: 0.9s ease-in-out;
+        }
+         .filter3 img:hover
+        {
+            height: 380px;
+            margin-top: 5%;
+            width: 100%;
+            filter: contrast(1);
+            transition: filer 0.3s ease ease-in-out;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="filter">
+        <img src="images/dada.jpg_large" alt="Shri Hanumanji">
+    </div>
+
+    <div class="filter1">
+        <img src="images/dada.jpg_large" alt="Shri Hanumanji">
+    </div>
+
+    <div class="filter2">
+        <img src="images/dada.jpg_large" alt="Shri Hanumanji">
+    </div>
+
+    <div class="filter3">
+        <img src="images/dada.jpg_large" alt="Shri Hanumanji">
+    </div>
+</body>
+</html>

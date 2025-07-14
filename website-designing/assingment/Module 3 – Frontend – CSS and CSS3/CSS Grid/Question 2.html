@@ -1,0 +1,97 @@
+		
+   <!-- Describe the grid-template-columns, grid-template-rows, and grid- gap properties. Provide examples of how to use them 
+
+		
+		grid-template-columns	:
+		
+		grid-template-columns CSS property define the lines,names & track sizing of the grid columns 
+
+		grid-template-columns by defines coumns width 
+
+		example : (if devloper can apply two column size in grid-template-columns so html page in crate two columns
+		
+		
+		grid-template-columns: 100px,200px,300px (this styntax create 3 columns also create in mention width size)
+		
+		
+
+		grid-template-rows
+
+        grid-template-columns CSS property desfine the lines,names & track sizing of the grid rows
+
+        grid-template-rows by defines rows height
+
+
+        grid-template-rows: 200px,150px,80px (this styntax create 3 rows also create in mention height size)
+
+
+
+        grid- gap properties
+
+        grid-gap CSS property define the gap between rows and columns 
+
+        gap though also specifc defines between two columns or two rows
+
+        gap: 20px;
+        row-gap: 20px;
+        columns-gap : 10px;
+
+        -->
+
+        <!-- Example -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Grid container properties</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            margin: 0;
+            height: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            border: solid 3px green;
+            display: grid;
+
+            /* use grid- gap properties */
+            gap: 20px;
+
+            /* use grid-template-columns*/
+
+            grid-template-columns: 100px 800px;
+
+            /* use grid-template-columns*/
+            
+            grid-template-rows: 30px 40px;
+
+            grid-auto-rows: 250px;
+            
+        }
+        .box
+        {
+            border: solid 1px red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+    </div>
+</body>
+</html>

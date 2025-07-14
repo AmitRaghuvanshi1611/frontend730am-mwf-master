@@ -1,0 +1,345 @@
+        /* @font-face */
+        /* {
+            font-family: CinzelDecorative-Regular;
+            src: url('..//fonts/CinzelDecorative-Regular.otf');
+        } */
+        /* *{
+            font-family: CinzelDecorative-Regular;
+        } */
+        body
+        {
+            background-color: cadetblue;
+            height: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        #Portfolio_header
+        {
+            height: auto;
+            width: 100%;
+            background-color: white;
+            border-bottom: solid 1px gray;
+            display: flex;
+            flex-direction: row;
+            top: 0;
+            position : fixed;
+            z-index: 6;
+            
+
+        }
+       
+        .Call_Us
+        {
+            padding: 20px;
+            height: auto;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            animation: fadeIn 2s infinite;
+        }
+        .serch_box
+        {
+        width: 60%;
+        height: auto;
+        margin: auto;
+        padding: 20px;
+        
+        }
+        .serch_box input
+        {
+          width: 550px;
+          height: auto;
+          padding: 10px;
+          margin-left: 10%;
+        }
+        .social-media
+        {
+            height: auto;
+            padding: 20px;
+            letter-spacing: 8px;
+            font-size: 25px;
+            margin-right: 2%;
+            margin-top: 1%;
+        }
+        #Portfolio_navbar
+        {
+            width: 100%;
+            height: auto;
+            background-color: black;
+            padding: 0px;
+            margin-top: -15px;
+                }
+        #Portfolio_navbar ul
+        {
+            margin-left: 5%;
+        }
+        #Portfolio_navbar ul li
+        {
+            display: inline-block;
+            font-size: 20px;
+            padding: 2px 20px;
+            
+            
+        }
+        #Portfolio_navbar ul li a
+        {
+            color: white;
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        marquee
+        {
+            font-size: 25px;
+            color: white;
+            background-color: cadetblue;
+            margin-top: -15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #Portfolio_slider
+        {
+            width: 100%;
+            height: 550px;
+            background-color: coral;
+            margin-top: -5px;
+        }
+        .banner 
+        {
+            width: 50%;
+            height: auto;
+             margin: auto;
+
+             
+        }
+        .banner img
+        {
+            height: 50%;
+            width: 320px;
+            margin-left: 25%;
+            padding: 20px;
+            border-radius: 50%;
+            margin-top: 5%;
+            animation: flash 4s infinite;
+        }
+        .banner img:hover
+        {
+            transition: 0.5s ease all;
+            width: 330px;
+            height: 48%;
+            border: solid 1px white;
+        }
+        #Portfolio_slider h1
+        {
+            font-size: 45px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: -10px;
+            animation: pulse 2s infinite;
+            text-shadow: 4px 4px black;
+        }
+         #Portfolio_slider p
+        {
+            font-size: 20px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: -10px;
+        }
+        #Portfolio_content
+        {
+            height: auto;
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+            margin-top: -45px;
+        }
+        .experience,
+        .skill,
+        .Education,
+        .Personal_Details,
+        .contact-us
+        {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 5%!important;
+        }
+        .experience h1 ,
+        .skill h1,
+        .Education h1,
+        .Personal_Details h1,
+        .contact-us h1,
+        .download_cv h1
+        {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .experience li
+        {
+            color: white;
+            font-size: 20px;
+        }
+        .Education th
+        {
+            color: white;
+            font-size: 25px;
+            background-color: black;
+        }
+        .Education td
+        {
+            color: white;
+        }
+        #Portfolio_content hr {
+        width: 30%;
+        border: solid 2px;
+        color: white;
+}
+        .Personal_Details th
+        {
+            font-size: 20px;
+            color: white;
+            text-align:left;
+        }
+        .Personal_Details td
+        {
+            font-size: 20px;
+            color: white;
+        }
+        .our-address {
+        width: 42%;
+        height: auto;
+        padding: 5px;
+        float: left;
+        font-size: 20px;
+        margin-left: 7%;
+        
+        }
+        .our-address p 
+        {
+            color: white;
+            font-size: 20px;
+            
+        }
+        .our-address a 
+        {
+            color: white;
+            font-size: 20px;
+            
+        }
+        .contact-form
+        {
+        width: 42%;
+        height: auto;
+        padding: 20px;
+        float: right;
+        margin-top: 1%;
+        }
+        .contact-form input ,textarea
+        {
+            height: 5%;
+            font-size: 12px;
+            width: 350px;
+            margin: 10px;
+            border-radius: 2px;
+            padding: 5px;
+        }
+        .contact-form input[type=submit]
+        {
+            color: white;
+            background-color: coral;
+            border-radius: 5px;
+            padding: 6px;
+            border: none;
+        }
+        .download_cv
+        {
+            margin: auto;
+            margin-top: 42%;
+        }
+        .download_cv b
+        {
+            text-align: center;
+            color: white;
+            margin-left: 44%;
+            margin-top: 5%;
+        }
+        .download_cv a
+        {
+            
+            margin-left: 2%;
+            
+        }
+        #footer
+        {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+        .links
+        {
+            height: auto;
+            width: 32%;
+            display: flex;
+        }
+        .links ul li
+        {
+            display: block;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 5px 18px;
+        }
+        .links a
+        {
+            text-decoration: none;
+            list-style-type: none;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .social-contect
+        {
+            font-size: 33px;
+            text-align: center;
+            letter-spacing: 8px;
+            width: 55%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+        .social-contect span
+        {
+             animation: heartBeat 2s infinite;
+        }
+        .news_letter 
+        {
+           
+            width: 33%;
+            margin-right: 5%;
+            
+
+        }
+        .news_letter h1
+        {
+            font-size: 28px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .news_letter input
+        {
+            width: 50%;
+            height: auto;
+            padding: 5px;
+        }
+        #copyright
+        {
+            width: 100%;
+            height: auto;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        
