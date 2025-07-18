@@ -1,0 +1,29 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar-brand
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.navbar-linkg
+{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+.navbar-linkg a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.navbar-linkg li
+{
+    display: inline-block;
+    padding: 10px 15px;
+}

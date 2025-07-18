@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>A 3x3 grid of product cards using CSS Grid</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src='main.js'></script>0
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background-color: grey;
+            box-sizing: border-box;
+        }
+        #grid
+        {
+            
+            width: 60%;
+            padding: 5%;
+            height: auto;
+            background-color: white;
+            margin: auto;
+            gap: 10px;
+            display: grid;
+            grid-template-columns: 250px 250px 250px;
+            grid-template-rows: 250px 250px 250px;
+            
+
+            border: solid 2px black;
+            
+        }
+            
+
+        
+        .box
+        {
+           
+            border: solid 2px black;
+
+            
+        }
+         .box:hover
+        {
+           
+            /* background-color: black; */
+            color: blue;
+
+            
+        }
+        img
+        {
+            height: 160px;
+            width: 180px;
+            margin-left: 18px;
+            padding: 5px 5px;
+            margin-top: 5px;   
+            
+        }
+
+        #grid h4
+        {
+            padding: 0;
+            margin-top: -30px;
+            text-align: center;
+        }
+        #grid p
+        {
+            padding: 0;
+            margin-top: -10px;
+            text-align: center;
+        }
+        p:hover
+        {
+            animation: 2s heartBeat infinite;
+        }
+        #grid button
+        {
+           height: 30px;
+           width: 150px;
+           margin: auto;
+           padding: 5px;
+           text-align: center !important;
+           margin-left: 50px;
+           margin-top: -10px;
+           border: none;
+           
+
+        }
+        #grid button:hover
+
+        {
+        background-color: black; 
+        color: white;  
+        animation: 3s flash infinite;
+        }
+            
+    </style>
+</head>
+<body>  
+    <section id="grid">
+        <div class="box">
+            
+            <img src="images/s1.png" alt="Shoespic" title="Calcetto Lightweight Casual Men">
+            
+            <h4><b>Calcetto Lightweight Casual Men</b></h4>
+            <p>Price : ₹1,299.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="images/s2.png" alt="Shoespic" title="Shop Women Casual Shoes">
+            <h4><b>Shop Women Casual Shoes</b></h4>
+            <p>Price : ₹1,199.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="images/s3.png" alt="Shoespic" title="Trainer Shoes">
+            <h4><b>Trainer Shoes</b></h4>
+            <p>Price : ₹1,599.00</p>
+            <button type="button">Add to Cart</button></div>
+        <div class="box">
+             <img src="images/s4.png" alt="Shoespic" title="Comfortable running Shoes">
+            <h4><b>Comfortable running Shoes</b></h4>
+            <p>Price : ₹1,899.00</p>
+            <button type="button">Add to Cart</button></div>
+        </div>
+        <div class="box">
+            <img src="images/s5.png" alt="Shoespic" title="Gravity Sports Shoes">
+            <h4><b>Gravity Sports Shoes</b></h4>
+            <p>Price : ₹1,799.00</p>
+            <button type="button">Add to Cart</button></div>
+        </div>
+        <div class="box">
+             <img src="images/s6.png" alt="Shoespic" title="Campus Men Cruiser Shoes">
+            <h4><b>Campus Men Cruiser Shoes</b></h4>
+            <p>Price : ₹1,799.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="box">
+             <img src="images/s7.png" alt="Shoespic" title="Campus Men Cruiser Shoes">
+            <h4><b>Paragon Kids Shoes</b></h4>
+            <p>Price : ₹1,099.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="images/s8.png" alt="Shoespic" title="Sports shoes and sneakers">
+            <h4><b>Sports shoes and sneakers</b></h4>
+            <p>Price : ₹1,499.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+        <div class="box">
+            <img src="images/s9.png" alt="Shoespic" title="SPARX Casual Shoes">
+            <h4><b>SPARX Casual Shoes</b></h4>
+            <p>Price : ₹2,499.00</p>
+            <button type="button">Add to Cart</button>
+        </div>
+    </section>
+</body>
+</html>

@@ -122,7 +122,8 @@ body
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    float: left;
+    /* flex-direction: column; */
 }
 .img img
 {
@@ -210,6 +211,7 @@ body
 .about p
 {
  margin: 20px;
+ float: left;
 }
 }
-}
+
