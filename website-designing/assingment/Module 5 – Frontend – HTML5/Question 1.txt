@@ -1,0 +1,21 @@
+Difference b/w HTML & HTML5?
+
+HTML  : - 
+
+html stands for hypertext markup language 
+html in data is store in browers as session and cookies form 
+html is primary language for devloping webpage 
+html is not supported multimedia 
+html is not supported javascript 
+html syntex is complex syntex 
+html throgh not propper crate a webpage or resposive webpage
+
+HTML5  : -
+
+html5 is also  hypertext markup language but its is update version compair to html 
+html5 is pervides update function this function throgh data can be store in databse  like  ...mysql 
+html 5 is a modify version of html 
+html5 is supported multimedia 
+html5 is supported javascript 
+html5 syntex is easy  syntex 
+html5 throgh propper or perfect webpage crate and also  resposive webpage create

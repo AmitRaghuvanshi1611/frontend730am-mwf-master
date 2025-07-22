@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>audio tag</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        #myCanvas
+        {
+            margin-left: 39%;
+            margin-top: 1%;
+        }
+       </style>
+</head>
+<body>
+    <h1>FREE RING LIGHT </h1>
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000000;">
+  Your browser does not support the HTML5 canvas tag.
+</canvas>
+
+<script>
+  
+  const canvas = document.getElementById('myCanvas');
+  
+  const ctx = canvas.getContext('2d');
+
+  
+  ctx.fillStyle = 'blue';
+  
+  ctx.fillRect(50, 50, 200, 50);  
+
+</script>
+     
+<div class="audi" style="text-align: center; margin-top: 20px;">
+        
+    <h2>Audio Player</h2>
+    <audio controls muted loop autoplay>
+        <source src="Audio/audio1.mp3 " type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <p style="text-align: center;">This is a simple audio player with a canvas element.</p>
+</body>
+</html>

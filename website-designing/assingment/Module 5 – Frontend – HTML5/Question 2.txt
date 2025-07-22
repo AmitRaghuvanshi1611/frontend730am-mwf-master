@@ -1,0 +1,42 @@
+What are the additional tags used in HTML5?
+
+<header>
+webpage in provides heading by header tag or header is define webpage head section
+
+<nav>
+webpage in navigation defines by nav tag (home,aboutus  ragister,feedback contectus,)
+
+<section>
+section tag define diffrent diffrent section in html5 webpage
+
+<aside>
+aside tag define any section in one side either left elither right
+
+<main>
+main  tag by define webpage main content 
+
+<mark>
+if devloper can high light any text so thie time use mark tag  name as work 
+
+<time>
+time tag define specific time
+
+<audio>
+audio tag define or set any audio file in webpage (html5 is supported multimedia)
+
+<video>
+same as audio tag work  if devloper can ad video file in webpage so this time use video tag
+
+<canvas>
+canvas tag throgh  drawing graphics via scripting.
+
+<footer>
+<footer tag via define footer section in webpage 
+
+
+***this all tag define in body tag****
+
+
+
+
+
