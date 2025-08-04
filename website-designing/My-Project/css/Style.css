@@ -1,0 +1,156 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#header
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.logo
+{
+    width: 150px;
+    height: auto;
+    padding: 15px;
+}
+.navbar-link li
+{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 10px 15px;
+
+}
+.navbar-link a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-size: 20px;
+
+}
+
+.welcome img
+{
+    
+    width: 120px;
+    height: auto;
+    padding: 15px;
+}
+
+.welcome
+{
+    
+    width: 100%;
+    height: auto;
+    padding: 180px;
+}
+
+
+.banner-img
+{
+    width: 100%;
+    height: 500px;
+    background: url("../Images/banner.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    position: relative;
+    
+}
+
+.callus
+{
+    margin-right:1%;
+    width: 400px;
+    margin-top: 5%;
+    border-radius: 3rem !important;
+   
+}
+.login
+{
+ max-width: 60%;
+ margin-top: 10%;
+ 
+
+}
+.login-bg
+{
+    background:url(../Images/login-img.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1%;
+    
+}
+.service
+{
+    list-style-type: none;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+
+.condition li
+{
+    font-size: 10px;
+
+}
+.dropdown
+{
+    position: relative;
+    
+    
+}
+   
+.dropdown-menu
+{
+    display: none;
+    position: absolute;
+    border-radius: 2%;
+    width: 300px;
+    right: 0;
+    border-radius: 1rem !important;
+    overflow-y: scroll;
+    max-height: 500px;
+   
+   
+}
+
+.dropdown-menu li
+{
+     margin: 5px !important;
+     padding: 0px !important;
+     list-style-type: none;
+     width: 95% !important;
+     font-size: 15px;
+    
+    
+     
+     
+}
+.dropdown:hover .dropdown-menu
+{
+    display: block;
+    padding: 0px 0px !important;
+    background-color: white;
+    color: black;
+
+ }
+
+
+#Content
+{
+    width: 100%;
+    height: auto;
+}
+#Footer
+{
+    width: 100%;
+    height: auto;
+}
