@@ -1,0 +1,12 @@
+what is tailwinds - css
+tailwinds css is framework of css
+tailwinds css is utility-first css (casecading stylesheet framework )
+it is provides inbuild components and class to build any stucture 
+tailwinds css is more stucture and fast compare with bootstrap
+
+tailwinds is more eeficiandt and stuctured compare with bootstrap
+tailwinds is an opensource css framework
+
+how to used tailwinds
+
+Http://tailwindcss.com/

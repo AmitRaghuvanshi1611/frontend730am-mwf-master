@@ -1,0 +1,41 @@
+what is bootstrap ???
+
+bootstarp is one type of frmamework & one type of style sheet 
+
+bootstarp through very easily create resposive html webpge  or  website 
+
+Bootstrap contains CSS- and JavaScript-based design templates for typography, forms, 
+buttons, navigation, and other interface components.
+
+Bootstrap also provides optional JavaScript plugins.
+
+Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile projects on the web.
+
+Bootstrap is a free and open-source front-end framework for designing websites and web applications.
+
+broswers device breakpoints for responsive design
+
+| Device Type       | Breakpoint (px) |
+
+|-------------------|-----------------| 
+
+| Mobile            | 320px           |
+| Mobile Landscape  | 480px           |
+| Tablet            | 768px           |
+| Tablet Landscape  | 1024px          |
+| Desktop           | 1280px          |
+| Large Desktop     | 1440px          |
+
+
+what is bootstrap CDN ?
+
+Bootstrap CDN (Content Delivery Network) is a service that allows you to link to Bootstrap's CSS and JavaScript files hosted on a remote server instead of downloading and hosting them on your own server
+
+bootstarp is two way CDN availabe 
+
+1.offline CDN
+
+Offline CDN refers to a Content Delivery Network that is not connected to the internet.
+
+2.online CDN
+Online CDN refers to a Content Delivery Network that is connected to the internet and provides access to static files such as images, videos, and other media. It is typically used to deliver content to users over the internet, improving website performance and reducing latency.
