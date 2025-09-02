@@ -1,0 +1,28 @@
+What is Jquery ???
+
+Jquery is client side java script library 
+Jquery used for provides effects
+Jquery used as programing language
+Jquery is lightweight it means less write code and more usables
+Jquery used for provides validate form | sliders |  n fade effects | cart managements
+| and toggles effects
+
+Jquery create with .js extention and called inside of html
+
+Jquery called inside of head and body tags using <script>
+Jquery is better way to called inside of body tags
+Jquery called via its CDN (content delivery network )
+
+there are two types of CDN
+
+1)online CDN
+
+2)offline CDN
+
+Jquery is strat with $() and jQuery both is strater of jQuery 
+
+jQuery is case senstive client side scripting language
+
+Jquery provides some inbuild  events means where we proformed action events are used
+
+example : button click | form submit | button hover etc
