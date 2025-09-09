@@ -41,28 +41,18 @@
     <script>
         $(document).ready(function()
         {
-            $("#btn1").click(function()
-        {
-            $("#date").text(Date()); 
-        }) 
-        }
-    )
+            $("#btn1").click(function(){
+            var age=18;
+            alert("your age is "+age);
+        })
+    })
     </script>
 
-     <script>
-        $(document).ready(function()
-        {
-            $("#btn2").click(function()
-        {
-            $("#date").text(Date()); 
-        }) 
-        }
-    )
-    </script>
+    
     <div class="container">
     <p id="date"></p>
-    <button type="button" id="btn1">click to display date >></button>
-    <button type="button" id="btn2">click to display date >></button>
+    <button type="button" id="btn1">click...>></button>
+    
     </div>
 </body>
 </html>

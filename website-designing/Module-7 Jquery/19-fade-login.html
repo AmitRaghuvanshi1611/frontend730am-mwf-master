@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>fade login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+
+    <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.7.1.js" type="text/javascript"> </script> 
+     
+     <!-- applided slide effects  -->
+
+     <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#slide-txt").fadeToggle("slow")
+            })
+
+             $("#btn2").click(function(){
+                $("#login").slideToggle("slow")
+            })
+        })
+     </script>
+     
+
+     <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: lightblue;
+        }
+
+        #slide
+        {
+            width: 100%;
+            height: auto;
+            margin: auto;
+            background-color: black;
+            padding: 50px;
+            
+            
+        }
+        #slide-txt
+        {
+            width: 100%;
+            height: 320px;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            display: none;
+
+        }
+        #slide-txt p
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+        }
+        #btn
+        
+        {
+            width: 120px;
+            height: auto;
+            padding: 5px;
+            background-color: white;
+            font-size: 20px;
+            border-radius: 20px;
+            float: left;
+            
+            border: none;
+          
+        }
+         #btn2
+        
+        {
+            width: 120px;
+            height: auto;
+            padding: 5px;
+            background-color: white;
+            font-size: 20px;
+            border-radius: 20px;
+            float: right;
+            margin-right: 8%;
+            border: none;
+           
+        }
+        #login
+        {
+            width: 50%;
+            height: 250px;
+            margin: auto;
+            background-color: white;
+            margin-top: 50px;
+        
+        }
+        input[type="email"],[type="password"]
+        {
+            width: 280px;
+            height: auto;
+            padding: 5px;
+        }
+        input[type="submit"]
+        {
+            width: 100px;
+            height: auto;
+            margin: auto;
+            border: none;
+            background-color: greenyellow;
+            color: white;
+            font-size: 20px;
+        }
+     </style>
+     
+</body>
+    <div id="slide"><button type="button" id="btn">click to slide</button><button type="button" id="btn2">Login</button></h1></div>
+    <div id="slide-txt">
+        <h1>50% off on selected item</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id repudiandae soluta nobis! Et odio in ab nobis laudantium, odit ipsa suscipit animi quasi! Nobis molestiae error ipsum ullam voluptates rem!</p>
+    </div>
+
+    <div id="login">
+        <table cellpadding="10" cellspacing="10" align="center">
+            <tr>
+            <th>Email *</th>
+            <td>
+                <input type="email" placeholder="Enter Your Email">
+            </td>
+            </tr>
+            <br><br>
+            <tr>
+            <th>Password *</th>
+            <td>
+                <input type="password" placeholder="Enter Your Password">
+            </td>
+            </tr>
+            <tr>
+               <td>
+                <input type="submit" value="Login">
+            </td> 
+            </tr>
+        </table>
+
+    </div>
+</html>

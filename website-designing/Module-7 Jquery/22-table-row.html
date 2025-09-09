@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Table Row</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+
+    <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.7.1.js" type="text/javascript"> </script> 
+     
+     <!-- applided slide effects  -->
+
+     <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("table").append("<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>"); 
+            })
+        })
+     </script>
+     <style>
+        #conent
+        {
+            margin-top: 10%;
+        }
+        button
+        {
+            font-size: 20px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            border: none;
+            float: right;
+            margin-right: 10%;
+            
+        }
+
+     </style>
+</head>
+    <body>
+        
+        <div id="conent">
+             
+        <button type="button" id="btn">Add Row>></button>
+                <br><br>
+            <table align="center" border="1" width="80%" cellpadding="5" cellspacing="5">
+
+               
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Adress</th>
+                    <th>Pincode</th>
+                </tr>
+
+                <tr align="center">
+                    <td>1</td>
+                    <td>Amit Savani</td>
+                    <td>30</td>
+                    <td>Male</td>
+                    <td>9106396956</td>
+                    <td>Kothariya Main Road</td>
+                    <td>360002</td>
+                </tr>
+
+                <tr align="center">
+                    <td>2</td>
+                    <td>Gopal Jadav</td>
+                    <td>35</td>
+                    <td>Male</td>
+                    <td>9909539083</td>
+                    <td>Gauridad</td>
+                    <td>360001</td>
+                </tr>
+
+                <tr align="center">
+                    <td>3</td>
+                    <td>Vasim Theba</td>
+                    <td>28</td>
+                    <td>Male</td>
+                    <td>8000002674</td>
+                    <td>Nilkanth Park</td>
+                    <td>360002</td>
+                </tr>
+            </table>
+        </div>
+
+    </body>      
+</html>

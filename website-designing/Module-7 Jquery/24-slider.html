@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sliders effects</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+
+    <!-- jQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.7.1.js" type="text/javascript"> </script> 
+
+     <!-- slider cycle CDN -->
+     <script src="https://ajax.aspnetcdn.com/ajax/jquery.cycle/2.88/jquery.cycle.all.min.js"></script>
+     
+     <script>
+        $(document).ready(function(){
+            $("#slider_effects").cycle("fade")
+        })
+     </script>
+     <!-- applided slide effects  -->
+
+     <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("table").append("<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>"); 
+            })
+
+             $("#btn1").click(function(){
+                $("#del").remove(); 
+            })
+        })
+     </script>
+     <style>
+        #conent
+        {
+            margin-top: 10%;
+        }
+        #btn
+        {
+            font-size: 20px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            border: none;
+            float: right;
+            margin-right: 10%;
+            
+        }
+        #slider_effects
+        {
+            width: 80%;
+            height: 300px;
+            margin-left: 10%;
+            margin-top: 2%;
+        }
+        #slider_effects img
+        {
+            width: 100%;
+            height: 400px;
+        }
+
+
+     </style>
+</head>
+    <body>
+        <!-- sliders -->
+
+        <div id="slider_effects">
+            <img src="images/1.jfif" alt="sliders-img"/>
+            <img src="images/slide2.jfif" alt="sliders-img"/>
+            <img src="images/slide3.jfif" alt="sliders-img"/>
+            <img src="images/slide4.jfif" alt="sliders-img"/>
+            <img src="images/slide5.jfif" alt="sliders-img"/>
+        </div>
+
+        <!-- table start -->
+        <div id="conent">
+             
+        <button type="button" id="btn">Add Row>></button>
+       >
+                <br><br>
+            <table align="center" border="1" width="80%" cellpadding="5" cellspacing="5">
+
+               
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Adress</th>
+                    <th>Pincode</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr align="center" id="del">
+                    <td>1</td>
+                    <td>Amit Savani</td>
+                    <td>30</td>
+                    <td>Male</td>
+                    <td>9106396956</td>
+                    <td>Kothariya Main Road</td>
+                    <td>360002</td>
+                    <td><button type="button" style="background-color: red; color: white; border: none; padding: 5px;" id="btn1">Delete</button></td>
+                </tr>
+
+                
+            </table>
+        </div>
+
+    </body>      
+</html>

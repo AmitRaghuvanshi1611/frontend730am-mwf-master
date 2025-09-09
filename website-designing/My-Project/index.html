@@ -223,7 +223,8 @@
 <!--Cars by category -->
 <div class="car-category container overflow-hidden mt-5">
 <h6 class="text-primary d-flex fs-1 text-dark">Cars by category</h6>
-    <div class="row ">
+    <div class="row">
+        <p id="data"></p>
         <div class="car-type">
         <button type="btn" class="btn-lg w-25 mt-2 rounded-pill border border-1 border-dark bg-light body">Body type</button>
             <div id="body-type">
@@ -238,7 +239,7 @@
         </div>
         <div class="car-budget">
         <button type="btn" class="btn-lg w-25 mt-2 ms-5 border border-1 border-dark bg-light rounded-pill budget">Car budget</button>
-            <div id="body-budget">
+        <div id="body-budget">
             <ul class=" p-3 rounded shadow d-flex">
                     <li class="bg-light col-md-2 rounded-3"><a href="#" >Car under 3 lakh</a></li>
                     <li class="bg-light col-md-2 ms-2  rounded-3"><a href="#" >Car under 4 lakh</a></li>
@@ -249,10 +250,10 @@
               
     </div>
         <div class="fuel-type">
-
+        
         <button type="btn" class="btn-lg w-25 mt-2 ms-5 border border-1 border-dark bg-light rounded-pill">Fuel type</button>
         <div id="fuel">
-            <ul class=" p-3 rounded shadow d-flex">
+            <ul class=" p-3 rounded shadow d-flex ">
                     <li class="bg-light col-md-2 rounded-3"><a href="#" ><img src="Images/petrol.png" class="img-fluid p-4"><br>Petrol</a></li>
                     <li class="bg-light col-md-2 ms-2  rounded-3"><a href="#" ><img src="Images/cng.png" class="img-fluid p-4"><br>Diesel</a></li>
                     <li class="bg-light col-md-2 ms-2  rounded-3"><a href="#" ><img src="Images/diesel.png" class="img-fluid p-4"><br>CNG</a></li>
@@ -260,28 +261,34 @@
                 </ul>
                 </div>
         </div>
+            
         </div>
+        
          <script type="text/javascript">
 
         $(document).ready(function(){
 
             // $("#body-type").hide();
             $(".body").click(function(){
+                $("#fuel").hide();
                  $("#body-budget").hide();
-                $("#body-type").slideToggle();
+                $("#body-type").slideDown(data);
+              
             });
 
               $("#body-budget").hide();
                  $(".budget").click(function(){
                      $("#body-type").hide();
-                 $("#body-budget").slideToggle();
+                     $("#fuel").hide();
+                 $("#body-budget").slideDown(data);
+                
             });
 
                 $("#fuel").hide();
                      $(".fuel-type").click(function(){
                          $("#body-type").hide();
                          $("#body-budget").hide();
-                     $("#fuel").slideToggle();
+                     $("#fuel").slideDown(data);
                 });
         })
 
