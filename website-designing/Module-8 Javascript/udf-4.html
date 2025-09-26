@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UDF-4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function add(a,b)
+        {
+            alert(a+b);
+        }
+        let n1=parseInt(prompt("Enter first number:"));
+        let n2=parseInt(prompt("Enter second number:"));
+        add(n1,n2);
+        let choice=prompt("Do yes or no");
+
+        do
+        {
+            if (choice =='yes') 
+            {
+                let n1=parseInt(prompt("Enter first number:"));
+                let n2=parseInt(prompt("Enter second number:"));
+                add(n1,n2);
+                let choice=prompt("Do yes or no");
+
+                
+            }
+             else (choice =='no')
+
+            {
+                alert("Thank you!");
+                break;
+                
+            }
+        }
+        while(choice =='yes')
+       
+
+    </script>
+</body>
+</html>

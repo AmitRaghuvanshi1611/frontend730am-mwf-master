@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UDF 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function add(a,b)
+        {
+            console.log("sub:",a+b);
+        }
+        function mul(a,b)
+        {
+            console.log("sub:",a*b);
+        }
+        function sub(a,b)
+        {
+            console.log("sub:",a-b);
+        }
+        function div(a,b)
+        {
+            console.log("sub:",a/b);
+        }
+
+        let n1=parseInt(prompt("Enter first number:"));
+        let n2=parseInt(prompt("Enter second number:"));
+        let choice=prompt("Enter your choice: 1.yes");
+        let choice1=prompt("Do you want to continue? (yes/no)");
+        switch(choice)
+        {
+            case '1': add(n1,n2);
+            break;
+            case '5': 
+            default: alert("Invalid choice");
+        }
+    </script>
+</body>
+</html>

@@ -548,7 +548,9 @@ position: relative;
 {
     margin-top: 20px;
 }
-#body-type
+#body-type,
+#body-budget,
+#fuel
 {
     margin-top: 10px;
     background-color: rgba(0,0,255, 0.1);

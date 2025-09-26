@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>use switch case calc</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body style="background-color: bisque;">
+    <h1 style="text-align: center;">use switch case calc</h1>
+    <hr>
+    <h2 style="text-align: center;">calc choice</h2>
+    
+    
+    <script>
+        var n1=prompt("Enter first number:");
+        var n2=prompt("Enter second number:");
+        var choice=prompt("Enter your choice: + - x /");
+        switch (choice) {
+            case "+":
+            var ans=Number(n1)+Number(n2);
+            alert("Addition is: "+ans);
+            break;
+            case "-":
+            var ans=Number(n1)-Number(n2);
+            alert("Subtraction is: "+ans);
+            break;
+            case "x":
+            var ans=Number(n1)*Number(n2);
+            alert("Multiplication is: "+ans);
+            break;
+            case "/":
+            var ans=Number(n1)/Number(n2);
+            alert("Division is: "+ans);
+            break;
+        
+            default:
+            alert("Invalid choice");
+                break;
+        }
+    </script>
+</body>
+</html>

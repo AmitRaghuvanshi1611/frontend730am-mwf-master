@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>use if else if case calc</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body style="background-color: bisque;">
+    <h1 style="text-align: center;">use if else if case calc</h1>
+    <hr>
+    <h2 style="text-align: center;">calc choice</h2>
+    <script>
+    var n1=prompt("Enter first Number");
+    var n2=prompt("Enter first Number");
+    var choice=prompt("Enter your choice: + - x /");
+    var add=Number(n1)+Number(n2);
+    var sub=Number(n1)-Number(n2);
+    var mul=Number(n1)*Number(n2);
+    var div=Number(n1)/Number(n2);
+
+    if (choice=='+') {
+        //var ans=Number(n1)+Number(n2);
+        alert("Addition is: "+add);
+    
+    } else if (choice=='-') {
+        //var ans=Number(n1)-Number(n2);
+        alert("Subtraction is: "+sub);
+    
+    } else if (choice=='x') {
+        //var ans=Number(n1)*Number(n2);
+        alert("Multiplication is: "+mul);
+    
+    } else if (choice=='/') {
+       // var ans=Number(n1)/Number(n2);
+        alert("Division is: "+div);
+        
+    } else 
+    {
+        alert("Invalid choice");
+        
+    }
+
+    </script>
+    </body>
+</html>
