@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF Cal</title>
+</head>
+<body>
+    <h1>UDF Cal</h1>
+    <script>
+        function add(a,n) {
+            
+            alert("sum : " + (a+n));
+            
+        }
+        let n1=parseInt(prompt("Enter first number:"));
+        let n2=parseInt(prompt("Enter second number:"));
+        add(n1,n2);
+        let choice=prompt("Do yes or no");
+
+       
+           do
+        {
+            if (choice =='yes') 
+            {
+                let n1=parseInt(prompt("Enter first number:"));
+                let n2=parseInt(prompt("Enter second number:"));
+                add(n1,n2);
+                let choice=prompt("Do yes or no");
+
+                
+            }
+             else (choice =='no')
+
+            {
+                alert("Thank you!");
+                break;
+                
+            }
+        }
+        while(choice =='yes')
+       
+    </script>

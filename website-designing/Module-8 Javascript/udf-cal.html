@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF Cal</title>
+</head>
+<body>
+    <h1>UDF Cal</h1>
+    <script>
+        function add(a,n) {
+            
+            alert("sum : " + (a+n));
+            
+        }
+        function sub(a,n) {
+            
+            alert("sub : " + (a-n));
+            
+        }
+        function mul(a,n) {
+            
+            alert("mul : " + (a*n));
+            
+        }
+
+         function div(a,n) {
+            
+            alert(" div : " + (a/n));
+            
+        }
+
+        let n1=parseInt(prompt("Enter first number:"));
+        let n2=parseInt(prompt("Enter second number:"));
+        let choice=prompt("Enter your choice: 1.add 2.sub 3.mul 4.div");
+
+        switch (choice) 
+            {
+            case '1':
+                add(n1,n2)
+                
+                break;
+            case '2': 
+                sub(n1,n2)
+                break;
+            case '3':
+                mul(n1,n2)
+                break;
+            case '4':
+                div(n1,n2)
+                break;    
+
+            default:
+                alert("Invalid choice");
+            
+        }
+       
+    </script>
+</body>
+</html>
