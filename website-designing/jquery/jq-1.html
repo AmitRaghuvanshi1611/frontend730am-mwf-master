@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Demo 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: beige;">
+    <h1 style="text-align: center;">Jquery Demo 1 (Property Change)</h1>
+
+    <h2 id="h">Hello Friends</h2>
+    <p class="p">How are YOu...! </p>
+    <button id="btn">Click Here</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#h").text("Welcome to Jquery World");
+                $(".p").css("color", "blue");
+            })
+        })
+    </script>
+</body>
+</html>

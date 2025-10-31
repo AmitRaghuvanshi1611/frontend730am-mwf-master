@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event 3</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Form Event 3</h1>
+    <hr>
+
+    <select id="myselect" style="width: 200px; height: 30px; font-size: 15px; border-radius: 5px; margin-left: 20px;">
+        <option value="">Select a Car</option>
+        <option value="baleno">baleno</option>
+        <option value="swift">swift</option>
+        <option value="spresso">spresso</option>
+        <option value="Dezire">Dezire</option>
+    </select>
+        <h3 id="msg"></h3>
+        <script>
+            let myselect=document.getElementById("myselect");
+            let msg=document.getElementById("msg");
+
+            myselect.addEventListener("change",function(){
+                let=x=myselect.value;   
+                msg.innerText=x;
+                
+            })
+        </script> 
+</body>
+</html>

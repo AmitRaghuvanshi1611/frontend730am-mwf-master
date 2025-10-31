@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Array With Example</title>
+</head>
+<body style="background-color: aquamarine;">
+    <h1 style="text-align: center;">Js Arrays With Exmaple </h1>
+    <hr>
+    <script>
+        let car=['baleno','ertica','spresso','dezire','swift','ciaz'];
+        //console.log(car);
+        //console.log(car[2]);
+        
+        car.push('ford'); //add element at last
+        //console.log(car);
+       
+        car.pop(); //remove element from last
+        
+        car.unshift('tata'); //add element at first
+        
+        car.shift(); //remove element from first
+        
+        
+        //console.log(car.length); 
+
+        //console.log(car.indexOf("spresso"));
+        
+        
+       /* if (car.includes("swift")) {
+            console.log("available");
+            
+        } else {
+            console.log("not available");
+        }
+            */
+
+       // console.log(car.sort());
+       // console.log(car.reverse());
+       /* console.log(car);
+       let tata=['nano','tiago','naxon','harrier'];
+        console.log(tata);
+        let allcars=car.concat(tata);
+        console.log(allcars);
+        */
+        //console.log(car.join(" - "));
+        //console.log(car);
+        //console.log(car.slice(0,3));
+        //console.log(car.splice(0,3,'honda','hyundai'));
+        console.log(car);
+        for (const i of car) {
+            console.log(i);
+        }
+        </script>
+</body>
+</html>

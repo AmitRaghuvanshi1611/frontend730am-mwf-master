@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ - 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: beige;">
+    <h1 style="text-align: center;">JQuery Demo 3</h1>
+     <img src="images/slide1.jpg" alt="Image not found" id="img" width="500px" height="300px" margin="auto">
+    <br>
+        <button id="fadein" style="margin-top: 50px;">Image Fade In</button>
+        <button id="fadeout">Image Fade Out</button>
+        <button id="fadeToggle">Image Fade Toggle</button>
+        <button id="fadeTo">Image Fade To</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#fadein").click(function(){
+                $("#img").fadeIn();
+            })
+            $("#fadeout").click(function(){
+                $("#img").fadeOut();
+            });
+            $("#fadeToggle").click(function(){
+                $("#img").fadeToggle();
+            });
+            $("#fadeTo").click(function(){
+                $("#img").fadeTo();
+            });
+        })
+    </script>
+</body>
+</html>

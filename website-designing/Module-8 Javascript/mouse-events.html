@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event Example</title>
+</head>
+<body>
+    <h1 style="text-align: center">Mouse Event Example</h1>
+    <hr>
+    <h2 id="Event">Mouse Event</h2>
+    <div id="object" style="width: 200px; height: 200px; background-color: aqua; border-radius: 10px;"> </div>
+
+    <script>
+
+        let obj=document.getElementById("object");
+        let event=document.getElementById("Event");
+        //1. click event
+       obj.addEventListener("click",function(){
+            event.innerText="You clicked on the object";
+            obj.style.backgroundColor="yellow";
+        });
+        //2. double click event
+        obj.addEventListener("dblclick",function(){
+            event.innerText="Oh you double clicked on the object";
+            obj.style.backgroundColor="green";
+        });
+
+        //3. mouseover event
+        obj.addEventListener("mouseover",function(){
+            event.innerText="You hovered on the object";
+            obj.style.backgroundColor="yellow";
+        });
+
+        //4. mouseout event
+         obj.addEventListener("mouseout",function(){
+            event.innerText="Mouse is out of the object";
+            obj.style.backgroundColor="aqua";
+        });
+
+         //4. mouseout move
+         obj.addEventListener("mousemove",function(e){
+
+            let x=e.offsetX;
+            let y=e.offsetY;
+            event.innerText="Mouse X: "+x+" Mouse Y: "+y;
+           
+        });
+    </script>
+</body>
+</html>

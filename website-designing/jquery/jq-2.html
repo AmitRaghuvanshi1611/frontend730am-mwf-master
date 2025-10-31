@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ - 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: beige;">
+    <h1 style="text-align: center;">JQuery Demo 2</h1>
+     <img src="images/slide1.jpg" alt="Image not found" id="img" width="500px" height="300px" margin="auto">
+    <br>
+    <button id="hide" style="margin-top: 50px;">Image Hide</button>
+    <button id="show">Image Show</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#img").hide();
+            });
+            $("#show").click(function(){
+                $("#img").show();
+            });
+        });
+    </script>
+</body>
+</html>

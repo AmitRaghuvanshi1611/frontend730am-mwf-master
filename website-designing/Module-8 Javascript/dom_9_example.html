@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Example 9</title>
+</head>
+<body>
+    <h1>Dom Example 9</h1>
+
+    <div id="box">
+    </div>
+
+    <button id="add">Add to Cart</button>
+    <button id="remove">Remove</button>
+
+    <script>
+        
+        let prolist=["Mouse","Laptop","Mobile","TV","Keyboard"];
+        let box=document.getElementById("box");
+        let addbtn=document.getElementById("add");  
+        let removebtn=document.getElementById("remove");
+        let count=0;
+        addbtn.onclick=function()
+        {
+            if(count<prolist.length)
+            {
+                let para=document.createElement("p");
+                para.innerText=prolist[count];
+                box.appendChild(para);
+                count++;
+            }
+            else
+            {
+                alert("No more products to add");
+            }
+        }
+        removebtn.onclick=function()
+        {
+            if(box.childElementCount>0)
+            {
+                box.removeChild(box.lastChild);
+                count--;
+            }
+            else
+            {
+                alert("No more products to remove");
+            }
+        }
+
+    </script>
+</body>
+</html>

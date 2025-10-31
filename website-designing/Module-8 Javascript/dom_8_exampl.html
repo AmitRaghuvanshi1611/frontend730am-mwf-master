@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example 8</title>
+</head>
+<body>
+    <h1>Dom Example 8</h1>
+
+    <div id="box">
+
+    </div>
+    <button onclick=additem()>Add Item</button>
+    <button onclick=removeitem()>Remove Item</button>
+
+    <script>
+        function additem()
+        {
+            let box=document.getElementById("box");
+            
+            let para=document.createElement("p");
+            para.innerText="This is a new item";
+            box.appendChild(para);
+
+        }
+
+        function removeitem()
+        {
+        let box=document.getElementById("box");
+        box.removeChild(box.lastChild);
+        if (box.childElementCount==0)
+        {
+            alert("No more items to remove");
+        }
+        }
+    </script>
+</body> 
+</html>

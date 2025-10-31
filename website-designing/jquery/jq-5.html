@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ - 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: beige;">
+    <h1 style="text-align: center;">Slide Up & Slide Down Duration</h1>
+
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At eligendi perspiciatis maiores nesciunt officia pariatur, sint laboriosam beatae natus atque ut quis, quas iste, commodi quasi veritatis incidunt exercitationem? Culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis non assumenda, quis ea atque quod ad aperiam nemo facilis facere vel? Cum a sunt perspiciatis cupiditate, molestiae quaerat beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla sit provident reprehenderit voluptates, minus earum cumque hic dolorem ducimus, quaerat deserunt consequatur fugit aliquam tenetur, explicabo iusto inventore ratione.</p>
+
+         <img src="images/slide1.jpg" alt="Image not found" id="img" width="500px" height="300px" margin="auto">
+    
+    </div>
+        <script>
+       /*$(document).ready(function(){
+            $("#box").css("background-color", "lightgray").slideUp(2000).slideDown(2000);
+       })*/
+
+       //callback function
+       $("#box").hide(2000,function(){
+        alert("The box is now hidden");
+       })
+      </script>
+</body>
+</html>

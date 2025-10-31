@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ - 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: beige;">
+    <h1 style="text-align: center;">Slide Up & Slide Down Exp</h1>
+     <img src="images/slide1.jpg" alt="Image not found" id="img" width="500px" height="300px" margin="auto">
+    <br>
+        <button id="su" style="margin-top: 50px;">Slide Up</button>
+        <button id="sd">Slide Down</button>
+      
+
+    <script>
+        $(document).ready(function(){
+            $("#su").click(function(){
+                $("#img").slideUp();
+            })
+            $("#sd").click(function(){
+                $("#img").slideDown();
+                })
+           
+        })
+    </script>
+</body>
+</html>

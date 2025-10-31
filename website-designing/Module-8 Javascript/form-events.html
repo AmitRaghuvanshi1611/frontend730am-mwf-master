@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: greenyellow;">Form Event</h1>
+    <hr>
+
+    <input type="text" id="text" placeholder="Type something here" style="width: 300px; height: 30px; font-size: 20px; border-radius: 5px;">
+
+    <p id="para"></p>
+
+    <script>
+        let text=document.getElementById("text");
+        let para=document.getElementById("para");
+
+        //1. focus event
+        text.addEventListener("focus",function(){
+            para.innerText="You focused on the input field";
+            text.style.backgroundColor="lightblue";
+        });
+
+        //2. blur event
+        text.addEventListener("blur",function(){
+            para.innerText="You left the input field";
+            text.style.backgroundColor="white";
+        });
+        
+        //3. change event
+        text.addEventListener("change",function(){
+            para.innerText="You changed the input field value to: "+text.value;
+            text.style.backgroundColor="lightgreen";
+        });
+        /*
+        //4. input event
+        text.addEventListener("input",function(){
+            para.innerText="You are typing: "+text.value;
+            text.style.backgroundColor="lightyellow";
+        });
+        */
+    </script>
+</body>
+</html>

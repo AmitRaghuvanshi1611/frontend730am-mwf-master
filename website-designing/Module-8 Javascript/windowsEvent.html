@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Event </title>
+</head>
+<body style="background-color: lightblue;">
+    <h1 style="text-align: center;">Windows Event</h1>
+    <hr>
+    <h2 id="msg"></h2>
+    <script>
+       /* window.addEventListener("load",function(){
+            alert("Welcome to our Website");
+        });
+        */
+        
+        window.addEventListener("resize",function(){
+            let msg=document.getElementById("msg");
+            let w=window.innerWidth;
+            let h=window.innerHeight;
+            msg.innerText='Width:' +w +' Height:' +h;
+        })
+    </script>
+</body>
+</html>

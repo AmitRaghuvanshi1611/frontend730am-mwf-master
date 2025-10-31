@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key Event Example</title>
+</head>
+<body>
+    <h1 style="text-align: center">Keyboard Event Example</h1>
+    <hr>
+    <h2 id="Event">Keyboard Event</h2>
+    <input type="text" id="inputbox" placeholder="Type something here">
+    <h3 id="output"></h3>
+
+    <script>
+
+        let=txt=document.getElementById("inputbox");
+        let output=document.getElementById("output");
+
+        txt.addEventListener("keydown",function(){
+            output.innerText="You pressed ";
+            
+        });
+
+        txt.addEventListener("keyup",function(){
+            output.innerText="You tyeped: "+txt.value;
+            
+        });
+    </script>
+   
+</body>
+</html>
