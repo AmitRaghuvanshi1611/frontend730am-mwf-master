@@ -1,0 +1,20 @@
+What is the difference between == and === in JavaScript ?
+
+In JavaScript, both `==` and `===` are comparison operators, but they differ in how they compare values.
+1. `==` (Equality Operator):
+   - The `==` operator compares two values for equality after performing type coercion if the values are of different types. This means that it converts one or both values to a common type before making the comparison.
+   - Example:
+     ```javascript
+     console.log(5 == '5'); // true, because '5' is coerced to 5
+     console.log(0 == false); // true, because false is coerced to 0
+     console.log(null == undefined); // true, because they are considered equal in this context
+     ```
+
+2. `===` (Strict Equality Operator):
+   - The `===` operator compares two values for equality without performing type coercion. This means that both the value and the type must be the same for the comparison to return true.
+   - Example:
+     ```javascript
+     console.log(5 === '5'); // false, because the types are different (number vs string)
+     console.log(0 === false); // false, because the types are different (number vs boolean)
+     console.log(null === undefined); // false, because they are of different types
+     ```

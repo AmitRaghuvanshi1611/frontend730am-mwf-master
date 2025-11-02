@@ -1,0 +1,28 @@
+What are variables in JavaScript? How do you declare a variable using var, let, and const?
+
+In JavaScript, a variable is a named container used to store data that can be referenced and manipulated in a program. Variables allow you to store values like numbers, strings, objects, arrays, and other — and to reuse or modify them throughout your code.
+You can declare a variable in JavaScript using three different keywords: var, let, and const. Each has its own characteristics and use cases:
+
+1. var:
+- The var keyword is used to declare a variable that is function-scoped or globally scoped if declared outside a function.
+- Variables declared with var can be re-declared and updated.
+Example:
+var age = 25;
+age = 26; // Updating 
+var age = 30; // Re-declaring 
+
+2. let:
+- The let keyword is used to declare a block-scoped variable, meaning it is only accessible within the block (e.g., inside a loop or an if statement) where it is defined.
+- Variables declared with let can be updated but cannot be re-declared within the same scope.   
+Example:
+let score = 100;
+score = 150; // Updating
+// let score = 200; // This would cause an error if uncommented
+
+
+3. const:
+- The const keyword is used to declare a block-scoped variable that cannot be reassigned after its initial assignment.
+- Variables declared with const must be initialized at the time of declaration and cannot be updated or re-declared.
+Example:    
+const pi = 3.14;
+// pi = 3.14159; // This would cause an error if uncommented
