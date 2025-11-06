@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Manipulation by Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body style="background-color: aquamarine;">
     <h1 style="text-align: center;">Dom Manipulation by Jquery</h1>
     <input type="text" placeholder="Enter item name " id="txt">
-    <li id="li"></li>
+    <button id="add">Add Item</button>
+    <button id="remove">Remove Item</button>
+    <button id="empty">Empty</button>
+    <li id="list"></li>
+     <script>
+        $(document).ready(function(){
+            $("#add").click(function(){
+                var item=$("#txt").val();
+                $("#list").append("<li>"+item+"</li>");
+            })
+
+            $("#remove").click(function(){
+               $("#list").remove();
+            })
+
+            $("#empty").click(function(){
+               $("#list").empty();
+            })
+        }
+    )
+     </script>
+
 </body>
 </html>

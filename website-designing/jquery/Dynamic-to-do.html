@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyanamic TO Do List </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: cadetblue;">
+    <h1 style="text-align: center;">Dyanamic TO Do List </h1>
+    <input type="text" placeholder="Enter your task" id="task">
+    <button id="addTask">Add Task</button>
+    <button id="remove">Remove Task</button>
+    <ul id="toDoList"></ul>
+
+    <script>
+        $(document).ready(function(){
+            $("#addTask").click(function(){
+                var a=$("#task").val();
+                $("#toDoList").append("<li>"+a+"</li>");
+            })
+
+            $("#remove").click(function(){
+                $("#toDoList").fadeOut(2000, function(){
+                    $(this).remove();
+                });
+                
+            })
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Manipulation Using Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1 style="text-align: center;">Class Manipulation Using Jquery</h1>
+    <hr>
+    <p id="amit">Amit R Savani</p>
+    <button id="add">Add Class</button>
+    <button id="remove">Remove Class</button>
+    <button id="toggleClass">Toggle Class</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#add").click(function(){
+                $("#amit").addClass("savani");
+                $(".savani").css("background-color","blue" ,"color","white");
+            });
+
+            $("#remove").click(function(){
+                $("#amit").css("background-color","white" ,"color","black");
+                $("#amit").removeClass("savani");
+                
+            });
+        });
+    </script>
+</body>
+</html>
