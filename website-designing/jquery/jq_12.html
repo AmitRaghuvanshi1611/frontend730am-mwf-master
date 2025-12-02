@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Animation Demo </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: lightblue">
+    <h1 style="text-align: center;">Jquery Animation Demo</h1>
+    <hr>
+     <div id="box" style="height: 100px ; width: 100px; background-color: gold;"></div>
+
+     <br><br>
+
+     <button id="move">Move</button>
+     <button id="grow">Grow</button>
+     <button id="reset">Reset</button>
+     <button id="anim">Animation</button>
+
+     <script>
+        $(document).ready(function(){
+            $("#move").click(function(){
+                $("#box").animate({marginLeft:"300px"},1500);
+            })
+
+            $("#grow").click(function(){
+                $("#box").animate({height: '200px' , width: '200px'});
+            })
+
+            $("#reset").click(function(){
+                $("#box").animate({height: '100px' , width: '100px',marginLeft:"0%"});
+            })
+
+            $("#anim").click(function(){
+                $("#box").animate({left:'100px'})
+                         .animate({top:'100px'})
+                         .fadeOut(1500)
+                         .fadein(1500);
+            } );
+        })
+     </script>
+</body>
+</html>

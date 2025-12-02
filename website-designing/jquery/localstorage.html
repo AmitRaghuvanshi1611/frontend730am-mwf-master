@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage in JS</title>
+</head>
+<body style="background-color: mediumaquamarine;">
+    <h1 style="text-align: center;">LocalStorage in JS</h1>
+
+    <hr>
+
+    <input type="text" id="data" placeholder="Enter name">
+
+    <button onclick="savedata()">Save Data</button>
+    <button onclick="showdata()">Show Data</button>
+    <button onclick="removedata()">Remove Data</button>
+   
+    <p id="result"></p>
+
+    <script>
+        function savedata()
+        {
+            let name=document.getElementById("data").value;
+            localStorage.setItem("name",name);
+            alert("Data Saved Successfully");
+        }
+        function showdata()
+        {
+            let name=localStorage.getItem("name");
+            document.getElementById("result").innerHTML="Name from LocalStorage is: "+name;
+        }
+
+        function removedata()
+        {
+            localStorage.removeItem("name");
+            alert("Data Removed Successfully");
+        }
+    </script>
+    
+</body>
+</html>

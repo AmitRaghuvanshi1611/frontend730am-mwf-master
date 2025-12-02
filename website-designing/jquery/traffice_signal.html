@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Traffic Signal Using jQuery</title>
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="traffic-light">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+</div>
+
+<button id="toggle">Start</button>
+
+<script>
+    $(document).ready(function () {
+    let index = 0;
+    let interval = null;
+
+    const lights = ["red", "yellow", "green"];
+
+    function changeLight() {
+        $(".light").removeClass("active");
+        $("." + lights[index]).addClass("active");
+        index = (index + 1) % lights.length;
+    }
+
+    $("#toggle").click(function () {
+        if (interval === null) {
+            interval = setInterval(changeLight, 1000);
+            $(this).text("Stop");
+        } else {
+            clearInterval(interval);
+            interval = null;
+            $(".light").removeClass("active");
+            $(this).text("Start");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

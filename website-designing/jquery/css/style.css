@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    font-family: Arial;
+}
+
+.traffic-light {
+    width: 100px;
+    background: #333;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.light {
+    width: 60px;
+    height: 60px;
+    background: #111;
+    margin: 10px auto;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.red.active { background: red; opacity: 1; }
+.yellow.active { background: yellow; opacity: 1; }
+.green.active { background: green; opacity: 1; }
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}

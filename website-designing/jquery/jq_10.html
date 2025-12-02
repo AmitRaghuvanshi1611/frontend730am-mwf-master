@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Demo Highlight </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: lightblue">
+    <h1 style="text-align: center;">Jquery Highlight Demo</h1>
+    <div id="Box" style="border: 2px solid blue; padding: 10px;">
+    <p>Amit <span>Rasikbhai</span> Savani</p>
+    </div>
+
+    <button id="btn1">Find Perent </button>
+    <button id="btn2">Find Child</button>
+    <script>
+        $(document).ready(function(){
+            $(btn1).click(function(){
+                $("span").parent().css("background-color", "yellow");
+            })
+            $(btn2).click(function(){
+                $("p").children().css("background-color", "red");
+            })
+
+        })
+    </script>
+</body>
+</html>   

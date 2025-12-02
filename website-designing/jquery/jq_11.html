@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Demo Traversing </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body style="background-color: lightblue">
+    <h1 style="text-align: center;">Jquery Traversing Demo</h1>
+    <hr>
+     <ul>
+        <li>Rajkot</li>
+        <li id="css">Ahmedabad</li>
+        <li>Amreli</li>
+        <li>Jamnagar</li>
+        <li>Porbandar</li>
+        
+     </ul>
+
+     <button id="next">Next</button>
+     <button id="pre">Previous</button>
+     <button id="sibi">Sibilings</button>
+      
+
+     <script>
+        $(document).ready(function(){
+            $("#next").click(function(){
+                $("#css").next().css("color","green")
+            })
+             $("#pre").click(function(){
+                $("#css").prev().css("color","red")
+            })
+             $("#sibi").click(function(){
+                $("#css").siblings().css("font-weight","bold")
+            })
+                })
+     </script>
+</body>
+</html>   
