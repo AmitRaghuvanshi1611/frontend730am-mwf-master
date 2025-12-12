@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class object with Dom</title>
+    <style>
+        input {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #000;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body style="background-color: moccasin;">
+    <h1 style=" text-align:center;">Class Object Exp With  Dom</h1>
+    <hr/>
+
+    <div id="student-result">
+        <input type="text" id="name" placeholder="Enter student name"/><br/><br/>
+        <input type="number" id="marks" placeholder="Enter student marks"/><br/><br/>
+        <button onclick="addStudent()">Get Result</button><br/><br/>
+    </div>
+    <table border="1" id="result-table" style="width:50%; text-align:center; margin-top:20px;">
+    <thead>
+        <tr>
+            <th><b>Sr No</b></th>
+            <th><b>Student Name</b></th>
+            <th><b>Student Marks</b></th>
+            <th><b>Result</b></th>
+        </tr>
+    </thead>
+    <tbody id="table-body">
+        <!-- Results will be appended here -->
+    </tbody>
+    </table>
+    <script>
+        class Student {
+            constructor(name, marks) {
+                this.name = name;
+                this.marks = marks;
+            }
+
+            getResult() {
+                if (this.marks >= 40) {
+                    return "Pass";
+                } else {
+                    return "Fail";
+                }
+            }
+        }
+        let stdata =[] ; // array to hold student objects
+        function addStudent() {
+            let name = document.getElementById("name").value;
+            let marks = Number(document.getElementById("marks").value);
+
+           let st = new Student(name, marks); // create student object
+           stdata.push(st); // add object to array
+
+           document.getElementById("name").value = "";
+           document.getElementById("marks").value = "";
+              displayResults();
+        }
+        function displayResults() {
+            let tableBody = document.getElementById("table-body");
+            tableBody.innerHTML = ""; // clear previous results
+            
+            for (let i = 0; i < stdata.length; i++) {
+                let row = `<tr>
+                    <td>${i + 1}</td>
+                    <td>${stdata[i].name}</td>
+                    <td>${stdata[i].marks}</td>
+                    <td>${stdata[i].getResult()}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+
+            }
+        }
+        </script>
+</body>
+</html>

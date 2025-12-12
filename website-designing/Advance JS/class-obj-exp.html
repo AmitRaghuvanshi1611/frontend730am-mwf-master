@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Object Example</title>
+</head>
+<body style="background-color: mediumpurple;">
+    <h1 style="text-align: center;">Class Object Example</h1>
+    <hr/>
+
+    <script>
+        class student 
+        {
+            constructor (name ,marks)
+            {
+                this.name = name;
+                this.marks = marks;
+            }
+            grtresult()
+            {
+                if(this.marks >= 40)
+                {
+                    document.write ("Pass");
+                }
+                else
+                {
+                    document.write ("fail");
+                }
+            }
+
+        }
+        // user input
+
+        let name = prompt ("Enter student name:");
+        let marks= Number (prompt ("Enter student marks:"));
+
+        // object creation
+        let s1 = new student (name , marks);
+        
+        document.write ("Student Name: " + s1.name + "<br>");
+        document.write ("Student Marks: " + s1.marks + "<br>");
+
+        document.write ("Result: ");
+        s1.grtresult();
+
+    </script>
+    
+</body>
+</html>

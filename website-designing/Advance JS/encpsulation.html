@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation Exp</title>
+</head>
+<body style="background-color: mediumorchid;">
+    <h1 style="text-align: center;">Encapsulation Example</h1>
+    <hr/>
+    <script>
+        class bankAccount 
+        {
+            #bal = 25000; // private field
+        
+        showbalance(pin) {
+            if (pin === 3983)
+        {
+            console.log("Balance is: " + this.#bal);
+        }    
+      
+           else
+           {
+            console.log("Invalid PIN");
+           }
+        }
+        }
+
+        b1 = new bankAccount();
+        b1.showbalance(3083); // Valid PIN
+        
+        </script>
+        
+
+    
+</body>
+</html>

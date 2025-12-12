@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in Js -3</title>
+</head>
+<body style="background-color: bisque;">
+    <h1 style="text-align: center;">Object in Js -3</h1>
+    
+    <script>
+    const person = {
+        id: 107,
+        name:"Amit Savani",
+        Sub:"JS"
+        }
+        document.write("ID: " + person.id + "<br>");
+        document.write("Name: " + person.name + "<br>");
+        document.write("Subject: " + person.Sub + "<br>");
+        person.city = "Rajkot"; //adding new property
+        document.write("City: " + person.city + "<br>");
+
+        person.name = "Amit Kumar Savani"; // update existing property
+        document.write("Modified Name: " + person.name + "<br>");
+  
+        delete person.Sub; // delete existing property
+        document.write("Subject after deletion: " + person.Sub + "<br>"); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor function</title>
+</head>
+<body style="background-color: cadetblue;">
+    <h1 style="text-align: center;">Constructor function</h1>
+     
+    <script>
+    function person(name,sub) {
+        this.name=name;
+        this.sub=sub;
+        this.amit=function()
+        {
+            console.log("Hello student My name is" , {name});
+        }
+         //instance method
+    }
+         st1=new person("Amit Savani","JS");
+         st2=new person("Nitesh Kumar","HTML");
+         
+         
+    
+        console.log(st1)
+        st2.amit();
+    </script>
+</body>
+</html>
