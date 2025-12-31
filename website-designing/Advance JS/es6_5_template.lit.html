@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES 5  Template Lit Example</title>
+</head>
+<body style="background-color: lightgray;">
+    <h1 style="text-align: center;">ES 5 Template Lit Example</h1>
+    
+    <script>
+        //const name = 'World';
+        //console.log("Hello", name);
+
+       // console.log(`Hello ${name}`);
+
+//..........................................................
+       /*const name = 'Amit';
+       const age = 25;
+
+       console.log(`My name is ${name} and my age is ${age}`);*/
+
+//..........................................................
+      /* const a = 5;
+       const b = 10;
+
+       console.log(`Total is ${a + b}`); */
+
+//..........................................................
+       //const para = "Hey Amit!/nWelcome to ES6 Template Literals!/nEnjoy your learning.";
+
+      /*const para =( `Hey Amit!
+                     Welcome to ES6 Template Literals!
+                     Enjoy your learning.`);
+       
+       console.log(para);
+
+*/
+
+//..........................................................
+   /*   const islogin=false;
+
+      const message =`User is ${islogin ? 'Welcome ' : 'Please login'}.`;
+
+      console.log(message); */
+
+
+      const items = ['Apple', 'Banana', 'Orange'];
+        let list ="<ul>";
+
+            items.forEach(item => {
+                list += `<li>${item}</li>`;
+            });
+        list += "</ul>";
+
+        document.body.innerHTML = list;
+
+
+    </script>
+</body>
+</html>

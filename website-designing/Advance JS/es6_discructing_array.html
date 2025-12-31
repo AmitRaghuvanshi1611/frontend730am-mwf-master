@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>es6 destructuring array</title>
+</head>
+<body style="background-color: linen;">
+    <h1>ES6 Destructuring Array</h1>
+       <script>
+
+        const color = ['Red', 'Green', 'Blue' ,'Yellow'];
+
+       /* const [firstColor, secondColor] = color;
+
+        console.log(firstColor); // Red  */
+
+        const [,,c] = color;
+        console.log(c); // Blue
+ 
+        const [a, ...d] =[1,2,3,4];
+        console.log(d); // Yellow
+       </script>
+</body>
+</html>

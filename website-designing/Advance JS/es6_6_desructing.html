@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Destructuring</title>
+</head>
+<body style="background-color: beige;">
+    <h1 style="text-align: center;">ES6 Destructuring</h1>
+    
+    <script>
+       /* const user = { name: "Amit", age: 25,city: "New York" };
+
+        const name = user.name;
+        const age = user.age;
+        const city = user.city;
+
+        console.log(name); // Amit
+        console.log(age);  // 25
+        console.log(city); // New York */
+
+/*
+         const user = { name: "Amit", age: 25,city: "New York" };
+
+        const { name, age, city } = user;
+        console.log(name); // Amit
+        console.log(age);  // 25
+        console.log(city); // New York
+
+        */
+
+
+        const user = {  name : "amit" ,
+            adress : {
+                city : "New York",
+                country : "USA"
+            }
+        };
+
+        const { adress : { city , country } } = user;
+        console.log(user);
+        
+    </script>
+</body>
+</html>
+
+
+
+

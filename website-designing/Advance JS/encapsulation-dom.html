@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Encapsulation Dom Exmample</title>
+</head>
+<body style="background-color: lightgray;">
+    <h1 style="text-align: center;">Encapsulation Dom Example</h1>
+    <hr/>
+     
+    <input type="text" id="name" placeholder="Enter Amount "/><br/><br/>
+
+    <button onclick="withdraw()">withdraw</button><br/><br/>
+
+    <p id="balance"></p>
+
+
+    <script>
+        class ATM
+        {
+            #balance =12000;
+
+            withdraw(amount){
+            if 
+            (amount<=this.#balance) {
+                return this.#balance -= amount;
+                
+            } else {
+                return "Insufficient balance";
+            }
+        }
+              
+
+    }
+
+     let atm=new ATM()
+        
+            function withdraw() {
+            let amount = Number (document.getElementById("name").value)
+            document.getElementById("balance").innerText = atm.withdraw(amount);
+        }
+    </script>
+</body>
+</html

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Arrow Functions</title>
+</head>
+<body style="background-color: lightcyan;">
+    <h1 style="text-align: center;">ES6 Arrow Functions</h1>
+    <hr/>
+      
+      <script>
+        //normal function
+        /*function add(a,b){
+            return a+b;
+        }
+        */
+       /* const add =(a,b) =>{
+            return a+b;
+        }
+            */
+
+        /*const mul = n=> n*n;
+        console.log(mul(5));*/  
+
+        /*const fun = name=>`hwllo ${name}`; 
+        console.log(fun("Amit")); */  
+
+       /* const fun = ()=>"hello world";
+        console.log(fun()); */
+
+
+        /*const user ={
+            name : "Amit",
+            showname :function(){
+                setTimeout(()=>{
+                    console.log(this.name);
+                },5000)
+            },
+        }
+        user.showname();  */
+
+
+        /*        const stud = ["amit","sumit","rahul"];
+
+        stud.map (stud => console.log(stud.toUpperCase()));
+       */
+
+
+       const age = [20,21,22,23,24];
+       const result = age.filter (age => age>=22);
+         console.log(result);
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Spread Operator</title>
+</head>
+<body style="background-color: mediumaquamarine;">
+    <h1 style="text-align: center;">ES6 Spread Operator</h1>
+    <script>
+        /*const num =[ 1,2,3,4,5];
+        console.log(num);
+        console.log(...num); // spread operator */
+
+
+       /* const num =[ 1,2,3,4,5];
+        const newNum = num;
+        console.log(newNum); // [1,2,3,4,5] */
+
+      /*  const num =[ 1,2,3,4,5];
+        const newNum = [...num,6,7,8];
+        console.log(newNum); // [1,2,3,4,5,6,7,8] */
+
+
+       /* const a = ["savani","amit"];
+        const b = ["Rasikbhai"];
+        const c = [...a,...b];
+        console.log(c); // ["savani","amit","Rasikbhai"] */
+
+
+        const user = {
+            name : "Amit",
+            age : 25,
+        };
+
+        const newUser = {
+            ...user,
+            city : "New York",
+        };
+
+        console.log(newUser); // {name: "Amit", age: 25} 
+
+
+
+        const updatedUser = {
+            ...user,
+            age : 26,
+        };
+        console.log(updatedUser); // {name: "Amit", age: 26}
+</script>
+</body>
+</html>

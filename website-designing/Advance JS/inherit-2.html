@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inheritance Example</title>
+</head>
+<body style="background-color: lightcoral;">
+    <h1 style="text-align: center;">Inheritacne Example</h1>
+    <hr/>
+    <script>
+        class Student{
+            constructor(name,subject){
+                this.name= name;
+                this.subject= subject;
+            }
+            details()
+            {
+            return `Name : ${this.name} ,subject : ${this.subject}`;
+
+        }
+        }
+        
+        class Marks extends Student{
+            constructor(name,subject,mark){
+                super(name,subject);
+                this.mark= mark;
+            }
+            result()
+        {
+            return this.mark >=40 ? 'Pass' : 'Fail';
+        }
+        }
+        
+        let m1= new Marks('Amit','Math',45);
+        console.log(m1.details());
+        console.log("marks : " + m1.mark);
+        console.log('Result : ' + m1.result());  
+    </script>
+</body>
+</html>

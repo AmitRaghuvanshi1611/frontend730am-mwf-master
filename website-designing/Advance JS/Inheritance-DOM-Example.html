@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritacne Dom Example</title>
+</head>
+<body style="background-color: lightgray;">
+    <h1 style="text-align: center;">Inheritacne Dom Example</h1>
+    <hr/>
+
+    <div>
+        <input type="text" id="name" placeholder="Enter Product name"/><br/><br/>
+        <input type="number" id="price" placeholder="Enter Product price"/><br/><br/>
+
+        <select id="pname">
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Groceries">Groceries</option>
+        </select>
+        <br/><br/>
+        <button onclick="addProduct()">Add Product</button><br/><br/>
+    </div>
+    <ul id="plist"> </ul>
+
+    <script>
+        class Product {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+            getDetails() {
+                return `Product Name: ${this.name}, Price: ${this.price}`;
+            }
+        }
+
+        class Electronics extends Product {
+            constructor(name, price) {
+                super(name, price);
+                this.category = "Electronics";
+            }
+            getDetails(){
+                return `${super.pname} : ${super.getDetails()}`;
+            }
+        }
+
+        
+        class Clothing extends Product {
+            constructor(name, price) {
+                super(name, price);
+                this.category = "clothing";
+            }
+            getDetails(){
+                return `${super.pname} : ${super.getDetails()}`;
+            }
+        }
+
+
+        
+        class Groceries extends Product {
+            constructor(name, price) {
+                super(name, price);
+                this.category = "groceries";
+            }
+            getDetails(){
+                return `${super.pname} : ${super.getDetails()}`;
+            }
+        }
+
+        function addProduct() {
+            let name = document.getElementById("name").value;
+            let price = Number(document.getElementById("price").value);
+            let pname = document.getElementById("pname").value;
+
+            let product;
+            if (pname === "Electronics") {
+                product = new Electronics(name, price);
+            } else if (pname === "Clothing") {
+                product = new Clothing(name, price);
+            } else if (pname === "Groceries") {
+                product = new Groceries(name, price);
+            }
+
+            let plist = document.getElementById("plist");
+            let li = document.createElement("li");
+            li.textContent = product.getDetails();
+            plist.appendChild(li);
+
+            document.getElementById("name").value = "";
+            document.getElementById("price").value = "";
+        }
+
+        
+    </script>
+</body>
+</html>
