@@ -1,0 +1,20 @@
+What is React.js? How is it different from other JavaScript frameworks and  libraries?
+
+>>>>
+React.js is a JavaScript library for make webpage, especially single-page web apps where the page updates without constantly reloading.  mens any action perform in webapps or webpage with out fill page reloading
+
+React js Created by Facebook
+first is reactjs is not open source but cureent time is open sourse for public platform
+
+many websiet create in reactjs like 
+
+Facebook
+Instagram
+WhatsApp Web
+
+React is a  one UI library, not a full framework.
+
+React js is different from other JavaScript frameworks and  libraries becuse React gives you one thing really well: building user interfaces.
+
+when other Frameworks like Angular or Vue (with its ecosystem) try to give you everything.
+
